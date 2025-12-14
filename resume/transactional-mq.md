@@ -1,3 +1,6 @@
+← [Ashe wiki](../README.md)
+
+---
 什么是事务消息
 
 1. 发送 Half Message → Broker
@@ -9,4 +12,4 @@
 
 事务消息选择放弃强一致性，保证最终一致性。以实现数据库写入和发送MQ的强绑定关系。
 
-> [other](../tags/map.md)
+Tags: [#other](../tags/other.md)
