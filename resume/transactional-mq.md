@@ -12,4 +12,4 @@
 
 事务消息选择放弃强一致性，保证最终一致性。以实现数据库写入和发送MQ的强绑定关系。
 
-Tags: [#other](../tags/other.md)
+Tags: [#other](../tags/map.md)
