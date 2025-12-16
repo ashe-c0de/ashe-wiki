@@ -1,4 +1,4 @@
-← [Ashe wiki](../README.md)
+← [Ashe wiki](../../README.md)
 
 ---
 TODO
