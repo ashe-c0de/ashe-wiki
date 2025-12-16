@@ -1,4 +1,4 @@
 ← [Ashe wiki](../../README.md)
 
 ---
-TODO
+- [defer的特性](../../resume/defer.md)
