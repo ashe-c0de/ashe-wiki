@@ -14,9 +14,9 @@ MySQL 中常见的索引类型：
   - 索引列的值必须唯一（允许有 NULL，但通常只允许一个 NULL）。  
   - 可用于保证数据唯一性（如身份证号、邮箱）。
 
-- 普通索引（INDEX / KEY）  
-  - 最基本的索引类型，无唯一性或非空限制。  
-  - 用于加速查询。
+- 普通索引（INDEX / KEY）
+  - 单列索引（Single-column Index）  
+  - 联合索引（Composite Index/Compound Index）
 
 - 全文索引（FULLTEXT）  
   - 用于对大文本字段（如 `CHAR`、`VARCHAR`、`TEXT`）进行关键词搜索。  
