@@ -10,4 +10,4 @@ context（上下文）是 控制并发操作生命周期、传递请求范围数
 3. 传递请求作用域的值（Request-scoped values）
 
 context包如何实现goroutine的取消?
-每次调用 WithCancel(parent)，都会创建一个新的 cancelCtx，并注册到父 context 的 children 中；取消goroutine的时候，通过channel通道传递一个空struct，子context通过监听channel，
+实现goroutine取消的cancelCtx结构体，其中的Context作为父context，done字段作为channel通道，children则是储存子context的map，当取消父context的时候，所有子context接收到channel的信号，实现级联取消。
