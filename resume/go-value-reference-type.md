@@ -15,3 +15,12 @@
 | **指针**   | `*T`                        | ❌ 否（拷贝地址值）                     | ✅ 影响（多个指针指向同一对象）               |
 
 > 除了 slice、map、channel、function、interface 这些“引用类型”，以及指针，其余都是值类型。
+
+
+```go
+// 在 Go 运行时，string 实际上由一个 “字符串头（string header）” 描述，其结构等价于：
+type stringHeader struct {
+    data uintptr // 指向底层byte数组的起始地址
+    len  int     // 字符串的长度（单位：字节）
+}
+```
