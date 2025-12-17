@@ -8,4 +8,4 @@
 - [sync包常见考点](../../resume/golang-sync.md)
 - [channel](../../resume/golang-channel.md)
 - [generics](../../resume/go-generics.md)
-
+- [context](../../resume/gin-context.md)
