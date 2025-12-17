@@ -5,3 +5,4 @@
 - [如何解决缓存穿透](../../resume/cache-penetration.md)
 - [MQ丢失的解决方案](../../resume/message-loss.md)
 - [分布式事务](../../resume/distributed-transactions.md)
+- [限流措施](../../resume/rate-limiting.md)
