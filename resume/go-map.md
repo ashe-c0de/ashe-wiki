@@ -1,4 +1,6 @@
-# Go Map 底层原理
+← [Ashe wiki](../README.md)
+
+---
 
 ## 1. 存储结构与定位
 - **桶（bucket）数组**
