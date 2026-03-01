@@ -5,7 +5,7 @@ Go 的 slice 底层包含三个重要组成部分：
 
 ```go
 type slice struct {
-	array unsafe.Pointer // 指向底层数组中 slice 第一个元素的地址
+	array unsafe.Pointer // 指向底层数组中第一个元素的地址
 	len   int // 当前长度
 	cap   int // 容量
 }
