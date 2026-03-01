@@ -2,6 +2,8 @@
 
 ---
 
+![pic](../src/go-map.png)
+
 ## 1. 存储结构与定位
 - 桶（bucket）数组
 - 哈希计算：`h1 = hash(key1)`
