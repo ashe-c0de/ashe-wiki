@@ -1,5 +1,7 @@
 桶（bucket）数组
+
 h1 = hash(key1)
+
 index = h1 % （2^B - 1）
 
 哈希冲突/索引重合
