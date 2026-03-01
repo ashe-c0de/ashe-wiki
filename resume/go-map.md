@@ -26,3 +26,6 @@
 负载因子 (LoadFactor)：
 ```text
 loadfactor = count（键值对数量） / 2^B（桶数量）
+```
+
+[简单使用代码](https://github.com/ashe-c0de/lang-lab/blob/main/golang/map/map.go)
