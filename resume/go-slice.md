@@ -3,9 +3,13 @@
 ---
 Go 的 slice 底层包含三个重要组成部分：
 
-- 指向底层数组中 slice 第一个元素的地址（Data）
-- 当前长度（Len）
-- 容量（Cap）
+```go
+type slice struct {
+	array unsafe.Pointer // 指向底层数组中 slice 第一个元素的地址
+	len   int // 当前长度
+	cap   int // 容量
+}
+```
 
 当 append 导致 len > cap 时，Go 会分配一个新的底层数组，并将原数据复制过去。扩容策略大致如下（具体实现可能随版本优化）：  
 如果原容量 < 1024，新容量 ≈ 原容量 * 2  
