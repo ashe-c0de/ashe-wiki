@@ -17,8 +17,18 @@ package main
 import "fmt"
 
 func main() {
-    s := make([]int, 3, 5)
-    fmt.Println(s[3]) // panic: runtime error: index out of range [3] with length 3
+
+	// 定义len和cap都为5的slice
+	s0 := make([]int, 5)
+
+	for i := range s0 {
+		fmt.Println(s0[i]) // 输出5个0
+	}
+
+	// 定义len为3，cap为5的slice
+	s := make([]int, 3, 5)
+	// 长度为3，可用元素index只有0、1、2
+	fmt.Println(s[3]) // panic: runtime error: index out of range [3] with length 3
 }
 ```
-定义如上所示的一个slice，你会觉得len和cap完全没有区别，但其实当你尝试获取s[3]的时候就发生了错误，因为len代表slice的可用元素个数，cap代表起始指针位置到整个底层数组末尾的剩余元素个数。
+
