@@ -32,10 +32,19 @@ func main() {
 		fmt.Println(s0[i]) // 输出5个0
 	}
 
-	// 定义len为3，cap为5的slice，推荐使用这种方式初始化slice
+	// 定义len为3，cap为5的slice
 	s := make([]int, 3, 5)
 	// 长度为3，可用元素index只有0、1、2
 	fmt.Println(s[3]) // panic: runtime error: index out of range [3] with length 3
+
+	// 推荐使用这种方式初始化slice，因为append默认在index(len)处赋值
+	s1 := make([]int, 0, 5)
+
+	s2 := make([]int, 2)
+	s2 = append(s2, 9)
+	fmt.Println(s2) // 输出 0 0 9
+	fmt.Println(len(s2)) // 3
+	fmt.Println(cap(s2)) // 4
 }
 ```
 
