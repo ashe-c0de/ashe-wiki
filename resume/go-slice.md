@@ -6,9 +6,10 @@ Go 的 slice 底层包含三个重要组成部分：
 ```go
 type slice struct {
 	array unsafe.Pointer // 指向底层数组中第一个元素的地址
-	len   int // 当前长度
-	cap   int // 容量
+	len   int // 长度，切片当前包含的元素个数。
+	cap   int // 容量，切片从起始位置到底层数组末尾所能容纳的最大元素个数
 }
+
 ```
 
 当 append 导致 len > cap 时: (触发扩容)
