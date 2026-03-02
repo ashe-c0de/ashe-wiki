@@ -2,6 +2,23 @@
 
 ---
 
+```go
+type hchan struct {
+    qcount   uint           // 当前队列中已有的元素个数（即 channel 中待接收的数据量）
+    dataqsiz uint           // 环形缓冲区的容量（即 make(chan T, N) 中的 N）
+    buf      unsafe.Pointer // 指向底层环形缓冲区数组的指针
+    elemsize uint16         // 单个元素的大小（字节）
+    closed   uint32         // 通道是否已关闭的标志（0:未关闭, 1:已关闭）
+    elemtype *_type         // 元素的类型信息（用于反射和类型检查）
+    sendx    uint           // 发送索引：下一个数据要写入缓冲区的位置
+    recvx    uint           // 接收索引：下一个数据要从缓冲区读取的位置
+    recvq    waitq          // 等待接收数据的 goroutine 队列（链表）
+    sendq    waitq          // 等待发送数据的 goroutine 队列（链表）
+
+    lock mutex              // 互斥锁：保护上述所有字段，保证并发安全
+}
+```
+
 无缓冲 Channel 是实现 Goroutine 之间强同步的最佳方式，它确保了数据发送和接收操作同时发生。[代码示例](https://github.com/ashe-c0de/lang-lab/blob/main/golang/channel/goroutine-communication.go)
 
 > context.WithTimeout就是计时器结合无缓冲channel实现的
