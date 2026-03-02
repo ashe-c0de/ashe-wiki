@@ -18,6 +18,10 @@ MySQL 中常见的索引类型：
   - 单列索引（Single-column Index）  
   - 联合索引（Composite Index/Compound Index）
 
+> 联合索引在使用时要注意到索引失效的情况，比如给table的字段a, b, c建立联合索引。
+> 索引就像一本字典，先按 a 排序，a 相同再按 b 排序，b 相同再按 c 排序。你必须先确定 a，才能利用 b 的有序性。
+> 当查询条件跳过a，那么b和c字段的索引都是失效的。
+
 - 全文索引（FULLTEXT）  
   - 用于对大文本字段（如 `CHAR`、`VARCHAR`、`TEXT`）进行关键词搜索。  
   - 支持 `MATCH() AGAINST()` 语法。  
