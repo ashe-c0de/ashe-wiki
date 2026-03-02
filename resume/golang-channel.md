@@ -28,6 +28,9 @@ type hchan struct {
 重复close channel会发生panic
 > panic: close of closed channel
 
+往未初始化的channel（nil）中发送数据，会发生error
+> fatal error: all goroutines are asleep - deadlock!
+
 channel + goroutine 通常会像是一个协程分发任务（生产者），多个协程（消费者）会并发地消费任务。  
 > 相对而言，使用协程（是用空间换时间），不使用协程（是用时间换空间，假设耗时t_0），这就引申出使用协程的判断依据，当一个任务拆分
 > 后，创建协程和分配任务的时间t_1 + 最慢的子任务耗时t_2 + 结果汇总（Channel 传输/锁竞争）的时间t_3 = t_total，如果t_total没有> 明显小于t_0，那么这个任务的拆分就是在白忙活。
