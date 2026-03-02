@@ -13,3 +13,6 @@ sync包常见考点：
 | Cond   | 条件变量                 | 在特定条件满足时，唤醒等待在该条件变量上的 goroutine。必须配合 Mutex 使用。                | 生产者-消费者模型中的线程协作         |
 | Map    | 并发安全的 Map           | 适用于读多写少的并发场景，作为标准 map + RWMutex 的替代方案。内部使用读写分离和脏数据机制。 | 缓存等读多写少的应用场景             |
 | Pool   | 对象池                   | 临时对象复用，减少垃圾回收 (GC) 压力。通过 Get() 获取对象，Put() 归还对象。归还的对象可能被 GC 回收。 | 频繁创建和销毁临时对象的场景         |
+
+
+[Once实现单例模式的代码解析](https://github.com/ashe-c0de/lang-lab/blob/main/golang/sync/once.go)
