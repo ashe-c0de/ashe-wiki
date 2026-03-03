@@ -20,7 +20,7 @@
 在重复读（Repeatable Read）的事务隔离机制下，事务2的两次查询结果都是10。
 
 当事务1的第二个sql不是commit而是rollback，那么数据库该如何回滚呢，这就涉及到MySQL在每张表中的隐藏字段db_trx_id(事务ID)、db_roll_ptr（回滚指针）……  
-以及MySQL的undolog会记录所有数据的修改操作，并通过db_roll_ptr维护好链表。  
+以及MySQL的undolog会记录所有数据的修改操作，并通过db_roll_ptr维护好链表（Multiversion多版本就是一行数据多次修改记录的版本链）。  
 | 当前版本 | db_trx_id | db_roll_ptr |
 |----------|-----------|-------------|
 | New Version | 101 | → Old Version |
