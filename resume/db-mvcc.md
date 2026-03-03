@@ -9,7 +9,14 @@
 
 ![p](../src/db-mvcc.png)
 
-如上图所示，两个并发的事务发生时。在读已提交（Read Committed）的事务隔离机制下，事务2的两次查询结果分别为10、0。  
+| t | trx1 | trx2 |
+|----------|-----------|-------------|
+| t0 | update t set 余额 = 0 where id = 1; |  |
+| t1 |  | select 余额 from t where id = 1; |
+| t2 | commit; |  |
+| t3 |  | select 余额 from t where id = 1; |
+
+如上所示，两个并发的事务发生时。在读已提交（Read Committed）的事务隔离机制下，事务2的两次查询结果分别为10、0。  
 在重复读（Repeatable Read）的事务隔离机制下，事务2的两次查询结果都是10。
 
 当事务1的第二个sql不是commit而是rollback，那么数据库该如何回滚呢，这就涉及到MySQL在每张表中的隐藏字段db_trx_id(事务ID)、db_roll_ptr（回滚指针）……  
@@ -21,3 +28,4 @@
 | Older Version | ... | → ... |
 
 并发读写时，read view正是基于db_trx_id & 数据库当前的事务隔离机制来决定读取结果。
+> MVCC = undo log + 版本链 + read view
