@@ -9,5 +9,15 @@
 
 ![p](../src/db-mvcc.png)
 
-如上图所示，两个并发的事务发生时。在读已提交（read commited）的事务隔离机制下，事务2的两次查询结果分别为10、0。  
-在重复读（repeated read）的事务隔离机制下，事务2的两次查询结果都是10。
+如上图所示，两个并发的事务发生时。在读已提交（Read Committed）的事务隔离机制下，事务2的两次查询结果分别为10、0。  
+在重复读（Repeatable Read）的事务隔离机制下，事务2的两次查询结果都是10。
+
+当事务1的第二个sql不是commit而是rollback，那么数据库该如何回滚呢，这就涉及到MySQL在每张表中的默认字段db_trx_id(事务ID)、db_roll_ptr（回滚指针）……  
+以及MySQL的undolog会记录所有数据的修改操作，并通过db_roll_ptr维护好链表。  
+| 当前版本 | db_trx_id | db_roll_ptr |
+|----------|-----------|-------------|
+| New Version | 101 | → Old Version |
+| Old Version | 99 | → Older Version |
+| Older Version | ... | → ... |
+
+并发读写时，read view正是基于db_trx_id & 数据库当前的事务隔离机制来决定读取结果。
