@@ -6,3 +6,5 @@
 - [数据库的脏读、幻读、不可重复读](../../resume/dirty-read.md)
 - [多版本并发控制mvcc](../../resume/db-mvcc.md)
 - [如何避免数据查询使用join](../../resume/join.md)
+- [redis常用数据结构](../../resume/redis-struct.md)
+
