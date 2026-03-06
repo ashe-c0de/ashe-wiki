@@ -9,5 +9,6 @@
 - [多版本并发控制mvcc](../../resume/db-mvcc.md)
 - [如何避免数据查询使用join](../../resume/join.md)
 - [redis常用数据结构](../../resume/redis-struct.md)
+- [redis持久化策略](../../resume/redis-persistence-strategy.md)
 - [redis淘汰策略](../../resume/redis-eviction-policy.md)
 
