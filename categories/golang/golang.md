@@ -12,3 +12,4 @@
 - [说一下Golang的内存逃逸](../../resume/go-memory-escape.md)
 - [说一下Golang的内存泄漏](../../resume/go-memory-leak.md)
 - [context](../../resume/gin-context.md)
+- [Go的GMP模型](../../resume/go-gmp.md)
