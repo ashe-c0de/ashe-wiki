@@ -34,3 +34,9 @@ Go 内存分配器采用 mcache → mcentral → mheap 的三级结构，通过 
 
 小对象：mcache → (miss) → mcentral → (miss) → mheap  
 大对象：(判断 size > 32KB) → 直接 mheap (跳过 mcache 链表查找和 mcentral)
+
+因此当应用的GC频率过高的时候，我们可以从以下角度去优化：
+- 预分配容量：make([]T, 0, cap) 或 make(map, cap)。避免切片/Map 动态扩容触发多次内存重新分配和数据拷贝。
+- 使用 sync.Pool：对于频繁创建和销毁的对象（如 buffer、临时结构体），使用 sync.Pool 复用。这能直接减少向 mcache/mcentral 的申请次数，显著降低 GC 压力。
+- 避免内存逃逸：尽量让对象分配在栈上（栈分配无需经过上述复杂的堆分配流程，且函数返回即自动释放，无 GC 成本）。使用 go build -gcflags="-m" 查看逃逸分析。
+- 注意大对象：频繁分配 >32KB 的大对象会直接冲击 mheap，增加锁竞争和 GC 负担，尽量复用或池化。
