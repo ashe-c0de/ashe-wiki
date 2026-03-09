@@ -13,3 +13,4 @@
 - [说一下Golang的内存泄漏](../../resume/go-memory-leak.md)
 - [context](../../resume/gin-context.md)
 - [Go的GMP模型](../../resume/go-gmp.md)
+- [Go的内存分配器](../../resume/go-memory-allocator.md)
