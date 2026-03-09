@@ -12,17 +12,35 @@ Go 中：
 因此，编译器必须判断：这个变量能否安全地留在栈上？
 
 ```go
-// example.go
 package main
 
-func foo() *int {
-    x := 42
-    return &x
-}
+import "fmt"
 
 func main() {
-    _ = foo()
+	do := Do()
+	fmt.Println(do)
+}
+
+func Do() *int {
+	fmt.Println("Do begin")
+	res := 7
+	fmt.Println("Do end")
+	return &res
 }
 ```
-go build -gcflags="-m -l" example.go // 查看逃逸分析
+go build -gcflags="-m" -o NUL ./sth/main.go // 查看逃逸分析
+
+```bash
+PS C:\workspace\Golang_project\interview> go build -gcflags="-m" -o NUL ./sth/main.go
+# command-line-arguments
+sth/main.go:11:13: inlining call to fmt.Println
+sth/main.go:13:13: inlining call to fmt.Println
+sth/main.go:7:13: inlining call to fmt.Println
+sth/main.go:12:2: moved to heap: res
+sth/main.go:11:13: ... argument does not escape
+sth/main.go:11:14: "Do begin" escapes to heap
+sth/main.go:13:13: ... argument does not escape
+sth/main.go:13:14: "Do end" escapes to heap
+sth/main.go:7:13: ... argument does not escape
+```
 
