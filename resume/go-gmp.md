@@ -11,7 +11,7 @@ golang的GMP模型是用于实现高并发调度的核心机制。它通过 G（
 ```graph
 HTTP 请求到达
       ↓
-创建 goroutine (G_new)
+创建 goroutine (G_new, 由 go runtime 创建)
       ↓
 加入 P 本地队列
       ↓
