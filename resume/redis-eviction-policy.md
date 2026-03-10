@@ -4,9 +4,9 @@
 Redis 的淘汰策略（Eviction Policy）是指当 Redis 内存使用量达到配置的上限（maxmemory）时，如何选择哪些数据删除，以便为新写入的数据腾出空间。
 > 如果未配置 maxmemory（默认情况），Redis 会尝试使用所有可用内存，直到操作系统杀死进程（Out Of Memory）。因此，生产环境必须配置 maxmemory 并选择合适的淘汰策略。
 
-| 策略                  | 说明                                             |
+| maxmemory-policy策略                  | 说明                                             |
 | ------------------- | ---------------------------------------------- |
-| **noeviction**      | 不淘汰数据，内存满时写操作直接返回错误（默认maxmemory-policy策略）。                     |
+| **noeviction**      | 不淘汰数据，内存满时写操作直接返回错误（默认策略）。                     |
 | **volatile-lru**    | 从 **设置了过期时间的 key** 中，淘汰 **最近最少使用（LRU）** 的 key。 |
 | **allkeys-lru**     | 从 **所有 key** 中，淘汰 **最近最少使用（LRU）** 的 key。(最常用)       |
 | **volatile-lfu**    | 从 **设置了过期时间的 key** 中，淘汰 **使用频率最低（LFU）** 的 key。 |
