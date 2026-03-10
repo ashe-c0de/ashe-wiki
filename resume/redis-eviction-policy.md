@@ -6,7 +6,7 @@ Redis 的淘汰策略（Eviction Policy）是指当 Redis 内存使用量达到�
 
 | 策略                  | 说明                                             |
 | ------------------- | ---------------------------------------------- |
-| **noeviction**      | 不淘汰数据，内存满时写操作直接返回错误（默认策略）。                     |
+| **noeviction**      | 不淘汰数据，内存满时写操作直接返回错误（默认maxmemory-policy策略）。                     |
 | **volatile-lru**    | 从 **设置了过期时间的 key** 中，淘汰 **最近最少使用（LRU）** 的 key。 |
 | **allkeys-lru**     | 从 **所有 key** 中，淘汰 **最近最少使用（LRU）** 的 key。(最常用)       |
 | **volatile-lfu**    | 从 **设置了过期时间的 key** 中，淘汰 **使用频率最低（LFU）** 的 key。 |
@@ -32,3 +32,11 @@ lfu：使用频率最低 (Least Frequently Used)
 random：随机
 
 ttl：TTL 最短
+
+| 配置状态 | maxmemory | maxmemory-policy | 内存满时的表现 | 谁触发的？ |
+| :--- | :--- | :--- | :--- | :--- |
+| 默认情况 | 未设置 (0) | (不生效) | 进程被操作系统杀死 (OOM) | 操作系统 (Kernel) |
+| 受控情况 | 已设置 (如 2G) | noeviction (默认) | 写操作返回错误，进程存活 | Redis 自身 |
+| 受控情况 | 已设置 (如 2G) | allkeys-lru | 自动删除旧数据，写入成功，进程存活 | Redis 自身 |
+
+
