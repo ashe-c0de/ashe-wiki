@@ -22,3 +22,34 @@ SELECT name, age FROM users WHERE name = 'Alice';
 ```
 idx_name_age 索引节点里存有 name 和 age，就不用根据主键ID回表查询。（将要查询的字段和where条件的字段加上联合索引，使得叶子节点上的索引值可以覆盖select的字段，这种解决方案就叫索引覆盖）
 
+---
+
+理解索引覆盖的前提是：认识InnoDB存储引擎的两种索引结构——聚簇索引（Clustered Index） & 二级索引（Secondary Index）  
+
+> 聚簇索引叶子节点存储的是 **主键值 & row(record的完整记录)**，因此`where id = 1`这样的查询直接就能获取该行的每个字段值，也就不存在回表的说法。  
+> 二级索引叶子节点存储的是**二级索引列值 & 主键值**，因此`select col(非索引列) from t where index_col = xxx;`这样的查询必须回表，经由聚簇索引再查询一次。
+
+```graph
+B+Tree (Clustered Index)
+
+非叶子节点
+   ↓
+[ key | pointer ]
+
+叶子节点
+   ↓
+[ 主键值 | col1 | col2 | col3 | ... | colN ]
+
+
+
+
+二级索引 B+Tree
+
+非叶子节点
+   ↓
+[ key | pointer ]
+
+叶子节点
+   ↓
+[ 二级索引列值 | 主键值 ]
+```
