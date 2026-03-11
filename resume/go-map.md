@@ -2,6 +2,50 @@
 
 ---
 
+```go
+// src/runtime/map.go
+
+// A header for a Go map.
+type hmap struct {
+	// 元素个数，调用 len(map) 时直接返回此值
+	count     int
+	
+	// 状态标志位
+	// 例如：flagWriting (写操作), flagIterator (遍历中), flagHashOnWrite (写时复制哈希)
+	flags     uint8
+	
+	// B 是 bucket 数组大小的对数 (log2)
+	// bucket 的总数 = 2^B
+	// 例如 B=3，则有 2^3=8 个 bucket
+	B         uint8
+	
+	// 溢出 bucket 的数量近似值 (noverflow)
+	// 用于判断是否需要扩容或缩容
+	noverflow uint16
+	
+	// 哈希种子 (hash0)
+	// 每次创建 map 时随机生成，防止哈希碰撞攻击 (Hash DoS)
+	hash0     uint32
+	
+	// 指向 bucket 数组的指针
+	// 这是一个 unsafe.Pointer，实际指向 []bmap
+	buckets    unsafe.Pointer
+	
+	// 如果发生了扩容 (growth)，oldbuckets 指向旧的 bucket 数组
+	// 在扩容迁移完成前，新旧数组共存
+	oldbuckets unsafe.Pointer
+	
+	// 迁移进度标记 (nevacuate)
+	// 表示已经迁移了多少个 old bucket
+	nevacuate  uintptr
+	
+	// 额外信息指针 (仅在需要时分配)
+	// 用于存储 overflow buckets 的指针列表等，节省小 map 的空间
+	extra     *mapextra
+}
+```
+
+
 ![pic](../src/go-map.png)
 > 当初始化一个map的时候，Go 会延迟分配，直到你写入第一个元素（key-value）时，才会真正创建这 1 个 bucket（B=0），最多储存8个元素。1*6.5=6.5，当第7个元素(key-value)写入时，就会发生第一次扩容2^B * 2^1 = 2个bucket
 
