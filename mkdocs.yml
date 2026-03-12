@@ -4,7 +4,7 @@ site_author: Ashe
 
 repo_name: ashe-c0de/ashe-wiki
 repo_url: https://github.com/ashe-c0de/ashe-wiki
-edit_uri: edit/V1/docs/
+edit_uri: edit/v1/docs/
 
 theme:
   name: material
