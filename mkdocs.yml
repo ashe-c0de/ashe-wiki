@@ -1,6 +1,7 @@
 site_name: Ashe Wiki
 site_url: https://ashe-wiki.github.io
 site_author: Ashe
+site_logo: logo.png 
 
 repo_name: ashe-c0de/ashe-wiki
 repo_url: https://github.com/ashe-c0de/ashe-wiki
@@ -9,6 +10,10 @@ edit_uri: edit/v1/docs/
 theme:
   name: material
   language: en
+
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
   features:
     - navigation.instant
