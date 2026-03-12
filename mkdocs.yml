@@ -67,21 +67,26 @@ extra_javascript:
   - javascripts/mermaid-init.js
 
 
-extra_css:
-  - stylesheets/extra.css
-
 
 nav:
 
   - Home: index.md
 
-  - Meditation:
-      - "2025-12-14": meditation/2025-12-14-diary.md
+  - Lang:
+      - Meditation:
+          - "2025-12-14": lang/meditation/2025-12-14-diary.md
+      - Rust:
+          - Environment: lang/rust/environment.md
+          - Web: lang/rust/web.md
+      - Markdown:
+          - Grammar: lang/markdown/grammar.md
 
-  - Rust:
-      - Environment: rust/environment.md
-      - Web: rust/web.md
 
-  - Markdown:
-      # - Overview: markdown/index.md
-      - Grammar: markdown/grammar.md
+  - Db:
+      - MySQL: db/mysql/index.md
+  
+  - Algo:
+      - algo/index.md
+  
+  - Other:
+      - other/index.md
