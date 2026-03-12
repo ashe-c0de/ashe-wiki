@@ -73,6 +73,8 @@ nav:
   - Home: index.md
 
   - Lang:
+      - Go:
+          - lang/go/index.md
       - Meditation:
           - "2025-12-14": lang/meditation/2025-12-14-diary.md
       - Rust:
@@ -87,6 +89,9 @@ nav:
   
   - Algo:
       - algo/index.md
+
+  - DevOps:
+      - devops/index.md
   
   - Other:
       - other/index.md
