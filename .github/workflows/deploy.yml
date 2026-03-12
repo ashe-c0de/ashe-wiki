@@ -1,0 +1,43 @@
+name: Deploy Ashe Wiki
+
+on:
+  push:
+    branches:
+      - v1
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout the archive repo
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # 2. Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 3. Install MkDocs and Material theme
+      - name: Install MkDocs
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-material
+
+      # 4. Build the static site
+      - name: Build site
+        run: mkdocs build --clean --site-dir site
+
+      # 5. Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.DEPLOY_KEY }}
+          external_repository: ashe-wiki/ashe-wiki.github.io
+          publish_branch: main
+          publish_dir: ./site

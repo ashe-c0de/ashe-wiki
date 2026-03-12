@@ -1,0 +1,87 @@
+site_name: Ashe Wiki
+site_url: https://ashe-wiki.github.io
+site_author: Ashe
+
+repo_name: ashe-c0de/ashe-wiki
+repo_url: https://github.com/ashe-c0de
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.tabs
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+    - content.action.edit
+    - search.highlight
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+
+markdown_extensions:
+
+  - admonition
+  - pymdownx.details
+
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+
+  - toc:
+      permalink: true
+
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid-init.js
+
+
+extra_css:
+  - stylesheets/extra.css
+
+
+nav:
+
+  - Home: index.md
+
+  - Meditation:
+      - "2025-12-14": meditation/2025-12-14-diary.md
+
+  - Rust:
+      - Environment: rust/environment.md
+      - Web: rust/web.md
+
+  - Markdown:
+      # - Overview: markdown/index.md
+      - Grammar: markdown/grammar.md
