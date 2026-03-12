@@ -7,6 +7,8 @@ repo_name: ashe-c0de/ashe-wiki
 repo_url: https://github.com/ashe-c0de/ashe-wiki
 edit_uri: edit/v1/docs/
 
+copyright: Copyright &copy; 2024-present <a href="https://github.com/ashe-c0de" target="_blank" rel="noopener noreferrer">Ashe</a>
+
 theme:
   name: material
   language: en
