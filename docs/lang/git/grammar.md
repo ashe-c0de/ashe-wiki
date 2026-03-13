@@ -1,0 +1,90 @@
+## Init
+
+```bash
+# 设置你的名字 (伪装成大佬)
+git config --global user.name "Your Name"
+
+# 设置你的邮箱 (必须和 GitHub/Gitee 账号一致，否则没绿点)
+git config --global user.email "your.email@example.com"
+
+# 查看配置有没有设对
+git config --list
+```
+
+## Undo
+
+1. 撤销工作区的修改 (还没 add)
+```bash
+# 丢弃某个文件的修改，还原到上一次提交的状态
+git checkout -- <文件名>
+# 或新版
+git restore <文件名>
+```
+2. 撤销暂存区的修改 (已经 add，还没 commit)
+```bash
+# 把文件从暂存区踢出去，但保留工作区的修改
+git reset HEAD <文件名>
+# 或新版
+git restore --staged <文件名>
+```
+3. 撤销提交 (已经 commit，还没 push)
+```bash
+# 回退到上一个版本，保留修改代码 (最安全)
+git reset --soft HEAD~1
+
+# 回退到上一个版本，彻底丢弃修改 (危险！)
+git reset --hard HEAD~1
+```   
+4. 穿越时空 (回到任意历史版本)
+```bash
+# 1. 先找到那个版本的哈希值 (ID)
+git log --oneline
+
+# 2. 回退过去 (小心，这会抹除之后的所有提交)
+git reset --hard <commit-hash>
+```
+
+## Stash
+
+写到一半，老板让你切分支修 Bug？别提交半成品，先藏起来。
+```bash
+# 储藏当前修改
+git stash
+
+# 查看储藏列表
+git stash list
+
+# 恢复最近一次储藏
+git stash pop
+
+# 恢复指定某一次
+git stash apply stash@{1}
+```
+
+## Rebase
+
+```bash
+# 在当前（个人）分支上，把主线的更新“接”过来，而不是产生一个 merge commit
+git rebase main
+# 注意：不要在公共分支上使用，会改写历史！
+```
+
+## Cherry-pick
+
+把别的分支上的某一次特定提交合过来
+```bash
+git cherry-pick <commit-hash>
+```
+
+## Shortcut
+
+```bash
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.last "log -1 HEAD"
+```
+
+- git st 代替 git status
+- git co 代替 git checkout

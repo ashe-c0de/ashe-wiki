@@ -94,6 +94,7 @@ nav:
   - Home: index.md
 
   - Lang:
+      - Nietzsche: lang/quote.md
       - Go:
           - "slice": lang/go/slice.md
           - "map": lang/go/map.md
@@ -120,6 +121,8 @@ nav:
           - Web: lang/rust/web.md
       - Markdown:
           - Grammar: lang/markdown/grammar.md
+      - Git:
+          - Grammar: lang/git/grammar.md
 
 
   - Db:
