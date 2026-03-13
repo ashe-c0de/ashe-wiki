@@ -128,6 +128,7 @@ nav:
           - "struct": db/redis/struct.md    
           - "persistence-strategy": db/redis/persistence-strategy.md    
           - "eviction-policy": db/redis/eviction-policy.md    
+          - "redis-cluster": db/redis/redis-cluster.md    
   
   - Algo:
       - algo/index.md
@@ -139,6 +140,7 @@ nav:
       - "distributed-transaction": devops/distributed-transaction.md
       - "drate-limiting": devops/rate-limiting.md 
       - "distributed-lock": devops/distributed-lock.md 
+      - "workflow": devops/workflow.md 
   
   - Other:
       - other/index.md
