@@ -113,7 +113,9 @@ Correct the classpath of your application so that it contains a single, compatib
 我Google了一下报错内容，在Elasticsearch官网中找到了一个类似的issue，官方给出的回答是elasticsearch-rest-client版本不对，但是那个issue最后并未被发起者确认解决问题，而是在一段时间后自动关闭了。
 
 ## 依赖分析
+
 ![p](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/db/sb-es-3.png)
+
 发现官方推荐的依赖中集成的elasticsearch-rest-client版本是6.4.3而非8.15.3
 
 因此尝试手动添加elasticsearch-rest-client8.15.3版本的依赖
