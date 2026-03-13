@@ -107,8 +107,8 @@ nav:
           - "context": lang/go/context.md
           - "gmp": lang/go/gmp.md
           - "memory-allocator": lang/go/memory-allocator.md
-      - Meditation:
-          - "2025-12-14": lang/meditation/2025-12-14-diary.md
+      # - Meditation:
+      #     - "2025-12-14": lang/meditation/2025-12-14-diary.md
       - Rust:
           - Environment: lang/rust/environment.md
           - Declare-variables: lang/rust/declare-variables.md
