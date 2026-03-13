@@ -1,9 +1,3 @@
-# 引入 python 模块
-{% import datetime %}
-
-# 定义当前年份变量
-{% set current_year = datetime.datetime.now().year %}
-
 site_name: Ashe Wiki
 site_url: https://ashe-wiki.github.io
 site_author: Ashe
