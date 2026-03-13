@@ -21,8 +21,8 @@ theme:
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.tracking
-    - navigation.sections
-    - navigation.expand
+#    - navigation.sections
+#    - navigation.expand
     - navigation.tabs
     - navigation.path
     - navigation.top
@@ -52,8 +52,11 @@ theme:
     code: Roboto Mono
 
 plugins:
-#  - search
-  - offline # 这个插件会处理字体和资源的本地化
+  - search:
+      lang:
+        - en
+        - zh
+  - offline
 
 markdown_extensions:
 
