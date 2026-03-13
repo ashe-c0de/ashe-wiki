@@ -1,3 +1,9 @@
+# 引入 python 模块
+{% import datetime %}
+
+# 定义当前年份变量
+{% set current_year = datetime.datetime.now().year %}
+
 site_name: Ashe Wiki
 site_url: https://ashe-wiki.github.io
 site_author: Ashe
@@ -7,7 +13,7 @@ repo_name: ashe-c0de/ashe-wiki
 repo_url: https://github.com/ashe-c0de/ashe-wiki
 edit_uri: edit/v1/docs/
 
-copyright: Copyright &copy; 2024-present <a href="https://github.com/ashe-c0de" target="_blank" rel="noopener noreferrer">Ashe</a>
+copyright: Copyright &copy; 2024-Present <a href="https://github.com/ashe-c0de" target="_blank" rel="noopener noreferrer">Ashe</a>
 
 theme:
   name: material
@@ -47,7 +53,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-
+  font:
+    text: Noto Serif SC
+#    code: Roboto Mono
 
 markdown_extensions:
 

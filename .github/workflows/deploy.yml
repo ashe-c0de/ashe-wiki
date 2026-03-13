@@ -29,6 +29,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material
 
+      # 3.1 自动替换Copyright中的Present
+      - name: Smart Update Copyright Year
+        run: |
+          CURRENT_YEAR=$(date +%Y)
+          if grep -qi "Present" mkdocs.yml; then
+            echo "Detected 'Present'. Replacing with $CURRENT_YEAR..."
+            sed -i -E "s/([0-9]{4})-Present/\1-$CURRENT_YEAR/gi" mkdocs.yml
+            echo "Verification:"
+            grep "copyright" mkdocs.yml
+          else
+            echo "No 'Present' found. Skipping replacement."
+          fi
+
       # 4. Build the static site
       - name: Build site
         run: mkdocs build --clean --site-dir site
