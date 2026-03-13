@@ -60,7 +60,11 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight
   - pymdownx.inlinehilite
 
@@ -108,13 +112,30 @@ nav:
 
 
   - Db:
-      - MySQL: db/mysql/index.md
+      - MySQL: 
+          - "index": db/mysql/ix.md
+          - "b+tree": db/mysql/b+tree.md
+          - "covering-index": db/mysql/covering-index.md
+          - "index-failure": db/mysql/index-failure.md
+          - "sql-flow": db/mysql/sql-flow.md
+          - "脏读、不可重复读、幻读": db/mysql/dirty-read.md
+          - "mvcc": db/mysql/mvcc.md
+          - "join": db/mysql/join.md
+      - Redis:
+          - "struct": db/redis/struct.md    
+          - "persistence-strategy": db/redis/persistence-strategy.md    
+          - "eviction-policy": db/redis/eviction-policy.md    
   
   - Algo:
       - algo/index.md
 
   - DevOps:
-      - devops/index.md
+      - "transactional-mq": devops/transactional-mq.md
+      - "cache": devops/cache.md
+      - "mq-loss": devops/mq-loss.md
+      - "distributed-transaction": devops/distributed-transaction.md
+      - "drate-limiting": devops/rate-limiting.md 
+      - "distributed-lock": devops/distributed-lock.md 
   
   - Other:
       - other/index.md
