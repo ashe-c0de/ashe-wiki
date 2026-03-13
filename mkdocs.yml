@@ -109,6 +109,13 @@ nav:
           - "2025-12-14": lang/meditation/2025-12-14-diary.md
       - Rust:
           - Environment: lang/rust/environment.md
+          - Declare-variables: lang/rust/declare-variables.md
+          - Cargo: lang/rust/cargo.md
+          - Data-type: lang/rust/data-type.md
+          - Function: lang/rust/function.md
+          - Control-flow: lang/rust/control-flow.md
+          - Stack&heap: lang/rust/stack&heap.md
+          - Ownership: lang/rust/ownership.md
           - Web: lang/rust/web.md
       - Markdown:
           - Grammar: lang/markdown/grammar.md
