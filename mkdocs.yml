@@ -49,7 +49,11 @@ theme:
         name: Switch to light mode
   font:
     text: Noto Serif SC
-#    code: Roboto Mono
+    code: Roboto Mono
+
+plugins:
+#  - search
+  - offline # 这个插件会处理字体和资源的本地化
 
 markdown_extensions:
 
@@ -83,7 +87,17 @@ nav:
 
   - Lang:
       - Go:
-          - lang/go/index.md
+          - "slice": lang/go/slice.md
+          - "map": lang/go/map.md
+          - "channel": lang/go/channel.md
+          - "defer": lang/go/defer.md
+          - "sync": lang/go/sync.md
+          - "generics": lang/go/generics.md
+          - "memory-escape": lang/go/memory-escape.md
+          - "memory-leak": lang/go/memory-leak.md
+          - "context": lang/go/context.md
+          - "gmp": lang/go/gmp.md
+          - "memory-allocator": lang/go/memory-allocator.md
       - Meditation:
           - "2025-12-14": lang/meditation/2025-12-14-diary.md
       - Rust:
