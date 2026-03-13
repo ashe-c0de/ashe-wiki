@@ -138,9 +138,11 @@ nav:
           - "eviction-policy": db/redis/eviction-policy.md    
           - "redis-cluster": db/redis/redis-cluster.md
       - Elasticsearch:
-          - Install: db/elasticsearch/install.md
+          - 安装Elasticsearch: db/elasticsearch/install.md
           - 索引为yellow的解决方案: db/elasticsearch/yellow-index.md   
           - SpringBoot引入es启动失败: db/elasticsearch/sb-es.md   
+          - 安装Kibana: db/elasticsearch/kibana.md   
+          - ELK收集SpringBoot日志: db/elasticsearch/elk.md   
   
   - Algo:
       - algo/index.md
