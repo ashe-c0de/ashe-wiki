@@ -1,1 +1,1 @@
-双指针算法
+We are not prisoners of fate, but prisoners of our own minds.

@@ -1,7 +1,6 @@
 site_name: Ashe Wiki
 site_url: https://ashe-wiki.github.io
 site_author: Ashe
-site_logo: logo.png 
 
 repo_name: ashe-c0de/ashe-wiki
 repo_url: https://github.com/ashe-c0de/ashe-wiki
@@ -18,6 +17,7 @@ theme:
     logo: logo
 
   features:
+    - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.tracking
@@ -97,7 +97,7 @@ nav:
   - Home: index.md
 
   - Lang:
-      - Nietzsche: lang/quote.md
+      - Nietzsche: lang/index.md
       - Go:
           - "slice": lang/go/slice.md
           - "map": lang/go/map.md
@@ -129,6 +129,7 @@ nav:
 
 
   - Db:
+      - Bruce Lee: db/index.md
       - MySQL: 
           - "index": db/mysql/ix.md
           - "b+tree": db/mysql/b+tree.md
@@ -151,9 +152,10 @@ nav:
           - ELK收集SpringBoot日志: db/elasticsearch/elk.md   
   
   - Algo:
-      - algo/index.md
+      - Unknown: algo/index.md
 
   - DevOps:
+      - Longstreet: devops/index.md
       - "Transactional-mq": devops/transactional-mq.md
       - "Cache": devops/cache.md
       - "Mq-loss": devops/mq-loss.md
@@ -165,4 +167,4 @@ nav:
       - "GitLab社区版CI/CD实现": devops/gitlab-ci.md 
   
   - Other:
-      - other/index.md
+      - 八代学: other/index.md
