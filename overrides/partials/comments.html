@@ -1,9 +1,9 @@
-{% if page.meta and page.meta.comments != false %}
+{% if not page.meta or page.meta.comments != false %}
 
 <hr>
 
 <details>
-  <summary>Comments</summary>
+  <summary>Comments (powered by Giscus)</summary>
 
   <script src="https://giscus.app/client.js"
         data-repo="ashe-c0de/ashe-wiki-comments"
