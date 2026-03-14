@@ -11,6 +11,7 @@ copyright: Copyright &copy; 2024-Present <a href="https://github.com/ashe-c0de" 
 theme:
   name: material
   language: en
+  custom_dir: overrides
 
   favicon: assets/favicon.png
   icon:
