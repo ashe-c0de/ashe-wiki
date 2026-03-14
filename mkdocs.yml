@@ -57,6 +57,7 @@ plugins:
         - en
         - zh
   - offline
+  - glightbox
 
 markdown_extensions:
 
