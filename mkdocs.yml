@@ -127,6 +127,10 @@ nav:
           - Grammar: lang/markdown/grammar.md
       - Git:
           - Grammar: lang/git/grammar.md
+      - Dp:
+          - TODO: lang/dp/todo.md
+      - Algo:
+          - TODO: lang/algo/todo.md
 
 
   - Db:
@@ -153,9 +157,6 @@ nav:
           - 安装Kibana: db/elasticsearch/kibana.md   
           - ELK收集SpringBoot日志: db/elasticsearch/elk.md   
   
-  - Algo:
-      - Unknown: algo/index.md
-
   - DevOps:
       - Longstreet: devops/index.md
       - "Transactional-mq": devops/transactional-mq.md
@@ -166,7 +167,14 @@ nav:
       - "Distributed-lock": devops/distributed-lock.md 
       - "Workflow": devops/workflow.md 
       - "CentOS安装GitLab社区版": devops/gitlab.md 
-      - "GitLab社区版CI/CD实现": devops/gitlab-ci.md 
-  
+      - "GitLab社区版CI/CD实现": devops/gitlab-ci.md
+       
+  - Systems:
+      - Unknown: systems/index.md
+      - OS: 
+          - TODO: systems/os/todo.md
+      - Net:
+          - TODO: systems/net/todo.md  
+
   - Other:
       - 八代学: other/index.md
