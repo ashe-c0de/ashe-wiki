@@ -1,4 +1,5 @@
 golang的GMP模型是用于实现高并发调度的核心机制。它通过 G（goroutine）+ M（machine）+ P（processor） 三个角色协同工作，使 Go 可以高效运行成千上万个 goroutine。
+
 - Goroutine（协程）
 - Processor（逻辑处理器）
 - Machine（系统线程）
