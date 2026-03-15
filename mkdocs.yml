@@ -18,6 +18,7 @@ theme:
     logo: logo
 
   features:
+    - header.autohide       # 启用头部自动隐藏
     - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
