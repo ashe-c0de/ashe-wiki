@@ -132,6 +132,7 @@ nav:
       - Algo:
           - TODO: lang/algo/todo.md
           - Two Pointer Algorithm: lang/algo/two-pointer.md
+          - Expand Around Center Algorithm: lang/algo/expand-around-center.md
 
 
   - Db:
