@@ -6,7 +6,7 @@
 
 思路：
 
-根据左右指针往中心方向遍历每个字符，并依次判断字符是否相等（不符合则return false），当left > right时结束遍历即可，最后return true。
+根据左右指针往中心方向遍历每个字符，并依次判断字符是否相等（不符合则return false），当left >= right时结束遍历即可，最后return true。
 
 tip1:
 
