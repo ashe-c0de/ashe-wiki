@@ -132,6 +132,7 @@ nav:
           - TODO: lang/dp/todo.md
       - Algo:
           - TODO: lang/algo/todo.md
+          - Two Pointer Algorithm: lang/algo/two-pointer.md
 
 
   - Db:
