@@ -6,6 +6,8 @@
 
 思路：
 
+![](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/go/two-pointer.png)
+
 根据左右指针往中心方向遍历每个字符，并依次判断字符是否相等（不符合则return false），当left >= right时结束遍历即可，最后return true。
 
 tip1:
