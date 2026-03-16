@@ -4,15 +4,19 @@ comments: false
 
 # Welcome to Ashe Wiki
 
-休对故人思故国，且将新火试新茶。诗酒趁年华！
+<div align="center">
 
-## Commands
+<img src="https://github.com/ashe-c0de.png" width="120" style="border-radius:50%">
 
-- [ ] Live
-- [ ] Feel
-- [ ] Think
+### Ashe
 
-## Project layout
+Backend Developer · Go / Rust / Java
+
+<a href="https://github.com/ashe-c0de">
+  <img src="https://img.shields.io/badge/GitHub-Visit_Profile-black?logo=github">
+</a>
+
+</div>
 
 !!! quote "Oscar Wilde"
     *When you are young you should feel your youth.*<br>
