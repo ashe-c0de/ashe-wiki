@@ -6,13 +6,19 @@ comments: false
 
 <div align="center">
 
-<img src="https://github.com/ashe-c0de.png" width="120" style="border-radius:50%">
+<img src="https://github.com/ashe-c0de.png"
+     width="120"
+     style="border-radius:50%; box-shadow:0 6px 20px rgba(0,0,0,0.15);">
 
-## Ashe
+<h2>Ashe</h2>
 
-Backend Developer · Go / Rust / Java
+<p><b>Backend Developer</b> · Go · Rust · Java</p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-Visit_Profile-black?logo=github)](https://github.com/ashe-c0de)
+<p>
+<a href="https://github.com/ashe-c0de">
+<img src="https://img.shields.io/badge/GitHub-ashe--c0de-black?logo=github">
+</a>
+</p>
 
 </div>
 
