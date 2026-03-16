@@ -8,13 +8,11 @@ comments: false
 
 <img src="https://github.com/ashe-c0de.png" width="120" style="border-radius:50%">
 
-### Ashe
+## Ashe
 
 Backend Developer · Go / Rust / Java
 
-<a href="https://github.com/ashe-c0de">
-  <img src="https://img.shields.io/badge/GitHub-Visit_Profile-black?logo=github">
-</a>
+[![GitHub](https://img.shields.io/badge/GitHub-Visit_Profile-black?logo=github)](https://github.com/ashe-c0de)
 
 </div>
 
