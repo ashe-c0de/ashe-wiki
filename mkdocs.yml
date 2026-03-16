@@ -1,5 +1,5 @@
 site_name: Ashe Wiki
-site_url: https://ashe-wiki.github.io
+site_url: https://ashe-wiki.github.io/
 site_author: Ashe
 
 repo_name: ashe-c0de/ashe-wiki
@@ -58,7 +58,6 @@ plugins:
       lang:
         - en
         - zh
-  - offline
   - glightbox
 
 markdown_extensions:
