@@ -40,8 +40,8 @@ tip2:
 
 ![](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/algorithm/char-gap.png)
 
-为了避免这种场景，我们需要保证回文中心始终落在字符间隙，而不是落在字符，因此把字符间隙视（抽象）作一个单位
-那么aba奇数长度拥有偶数个间隙，abba偶数长度拥有奇数个间隙
+为了避免这种场景，我们需要保证回文中心始终落在字符间隙，而不是落在字符，因此把字符间隙视（抽象）作一个单位  
+那么aba奇数长度拥有偶数个间隙，abba偶数长度拥有奇数个间隙  
 n长度的字符串总共单位即2*n-1
 
 [Go代码示例](https://github.com/ashe-c0de/lang-lab/blob/main/golang/algorithm/expand-around-center.go)
