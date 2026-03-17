@@ -133,6 +133,8 @@ nav:
           - TODO: lang/algo/todo.md
           - Two Pointer Algorithm: lang/algo/two-pointer.md
           - Expand Around Center Algorithm: lang/algo/expand-around-center.md
+          - Manacher Algorithm: lang/algo/manacher.md
+          - Slide Window Algorithm: lang/algo/slide-window.md
 
 
   - Db:
