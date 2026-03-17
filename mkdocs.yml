@@ -134,25 +134,27 @@ nav:
           - Two Pointer Algorithm: lang/algo/two-pointer.md
           - Expand Around Center Algorithm: lang/algo/expand-around-center.md
           - Manacher Algorithm: lang/algo/manacher.md
-          - Slide Window Algorithm: lang/algo/slide-window.md
+          - Slide Window Algorithm: lang/algo/sliding-window.md
 
 
   - Db:
       - Bruce Lee: db/index.md
       - MySQL: 
-          - "index": db/mysql/ix.md
-          - "b+tree": db/mysql/b+tree.md
-          - "covering-index": db/mysql/covering-index.md
-          - "index-failure": db/mysql/index-failure.md
-          - "sql-flow": db/mysql/sql-flow.md
-          - "脏读、不可重复读、幻读": db/mysql/dirty-read.md
-          - "mvcc": db/mysql/mvcc.md
-          - "join": db/mysql/join.md
+          - index: db/mysql/ix.md
+          - b+tree: db/mysql/b+tree.md
+          - covering-index: db/mysql/covering-index.md
+          - index-failure: db/mysql/index-failure.md
+          - sql-flow: db/mysql/sql-flow.md
+          - 脏读、不可重复读、幻读: db/mysql/dirty-read.md
+          - mvcc: db/mysql/mvcc.md
+          - join: db/mysql/join.md
       - Redis:
-          - "struct": db/redis/struct.md    
-          - "persistence-strategy": db/redis/persistence-strategy.md    
-          - "eviction-policy": db/redis/eviction-policy.md    
-          - "redis-cluster": db/redis/redis-cluster.md
+          - struct: db/redis/struct.md    
+          - big key problem: db/redis/big-key-problem.md    
+          - hot key problem: db/redis/hot-key-problem.md   
+          - persistence-strategy: db/redis/persistence-strategy.md    
+          - eviction-policy: db/redis/eviction-policy.md    
+          - redis-cluster: db/redis/redis-cluster.md
       - Elasticsearch:
           - 安装Elasticsearch: db/elasticsearch/install.md
           - getting-started: db/elasticsearch/getting-started.md
@@ -163,15 +165,15 @@ nav:
   
   - DevOps:
       - Longstreet: devops/index.md
-      - "Transactional-mq": devops/transactional-mq.md
-      - "Cache": devops/cache.md
-      - "Mq-loss": devops/mq-loss.md
-      - "Distributed-transaction": devops/distributed-transaction.md
-      - "Rate-limiting": devops/rate-limiting.md 
-      - "Distributed-lock": devops/distributed-lock.md 
-      - "Workflow": devops/workflow.md 
-      - "CentOS安装GitLab社区版": devops/gitlab.md 
-      - "GitLab社区版CI/CD实现": devops/gitlab-ci.md
+      - Transactional-mq: devops/transactional-mq.md
+      - Cache: devops/cache.md
+      - Mq-loss: devops/mq-loss.md
+      - Distributed-transaction: devops/distributed-transaction.md
+      - Rate-limiting: devops/rate-limiting.md 
+      - Distributed-lock: devops/distributed-lock.md 
+      - Workflow: devops/workflow.md 
+      - CentOS安装GitLab社区版: devops/gitlab.md 
+      - GitLab社区版CI/CD实现: devops/gitlab-ci.md
        
   - Systems:
       - Unknown: systems/index.md
