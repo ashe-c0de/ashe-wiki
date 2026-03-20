@@ -129,6 +129,7 @@ nav:
           - Grammar: lang/git/grammar.md
       - Dp:
           - TODO: lang/dp/todo.md
+          - Singleton: lang/dp/singleton.md
       - Algo:
           - TODO: lang/algo/todo.md
           - Two Pointer Algorithm: lang/algo/two-pointer.md
