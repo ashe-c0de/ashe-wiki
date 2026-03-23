@@ -1,4 +1,6 @@
 
+> [我的neovim的init.lua](https://github.com/ashe-c0de/dotfiles-env/blob/main/neovim/init.lua)
+
 ## 常用快捷键
 
 `nvim .` 打开当前文件夹（项目）
@@ -69,3 +71,12 @@
 
 `C:\Users\<username>\AppData\Local\nvim-data\project_nvim\project_history` 使用记事本打开，可以选择删除缓存错误的project目录
 
+## 模式切换
+
+| 模式名称 | 进入方式 | 主要用途 |
+|---|---|---|
+| Normal | Esc 或 Ctrl+[ | 移动、删除、复制、跳转 |
+| Insert | i, a, o 等 | 输入文本 |
+| Visual | v, V, Ctrl+v | 选中块、批量操作 |
+| Command | :, / | 执行命令、查找 |
+| Replace | R | 覆盖现有字符 |
