@@ -63,4 +63,9 @@
 
 `Space + w`   → 保存
 
+## workspace工作区(project.nvim插件)
+
+`Space + fp` 打开最近的项目
+
+`C:\Users\<username>\AppData\Local\nvim-data\project_nvim\project_history` 使用记事本打开，可以选择删除缓存错误的project目录
 
