@@ -67,13 +67,23 @@
 
 `Space + w`   → 保存
 
-`Space + t`   → 唤出terminal，Insert模式下jk回到Normal模式 
+`Space + rn`  rename
+
+`Space + fl`  格式化
+
+`Space + ca`  code action
+
+`Space + ff`  find_files
+
+`Space + fg`  live_grep
 
 ## workspace工作区(project.nvim插件)
 
 `Space + fp` 打开最近的项目
 
-`C:\Users\<username>\AppData\Local\nvim-data\project_nvim\project_history` 使用记事本打开，可以选择删除缓存错误的project目录
+`C:\Users\<username>\AppData\Local\nvim-data\project_nvim\project_history`
+
+使用记事本打开，可以选择删除缓存错误的project目录
 
 ## 模式切换
 
