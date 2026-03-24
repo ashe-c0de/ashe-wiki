@@ -59,13 +59,11 @@
 
 ## leader组合键(需配置init.lua)
 
-`Space + f`   → 文件搜索
-
 `Space + e`   → 文件树
 
-`Space + g`   → 全局搜索
-
 `Space + w`   → 保存
+
+`Space + t`   → 唤出terminal，Insert模式下jk回到Normal模式 
 
 ## workspace工作区(project.nvim插件)
 
