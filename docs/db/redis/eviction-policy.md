@@ -4,10 +4,10 @@ Redis 的淘汰策略（Eviction Policy）是指当 Redis 内存使用量达到�
 | maxmemory-policy策略                  | 说明                                             |
 | ------------------- | ---------------------------------------------- |
 | **noeviction**      | 不淘汰数据，内存满时写操作直接返回错误（默认策略）。                     |
-| **volatile-lru**    | 从 **设置了过期时间的 key** 中，淘汰 **最近最少使用（LRU）** 的 key。 |
-| **allkeys-lru**     | 从 **所有 key** 中，淘汰 **最近最少使用（LRU）** 的 key。(最常用)       |
-| **volatile-lfu**    | 从 **设置了过期时间的 key** 中，淘汰 **使用频率最低（LFU）** 的 key。 |
-| **allkeys-lfu**     | 从 **所有 key** 中，淘汰 **使用频率最低（LFU）** 的 key。       |
+| **volatile-lru**    | 从 **设置了过期时间的 key** 中，淘汰 **最近使用最少（LRU）** 的 key。 |
+| **allkeys-lru**     | 从 **所有 key** 中，淘汰 **最近使用最少（LRU）** 的 key。(最常用)       |
+| **volatile-lfu**    | 从 **设置了过期时间的 key** 中，淘汰 **频率使用最低（LFU）** 的 key。 |
+| **allkeys-lfu**     | 从 **所有 key** 中，淘汰 **频率使用最低（LFU）** 的 key。       |
 | **volatile-random** | 从 **设置了过期时间的 key** 中随机淘汰。                      |
 | **allkeys-random**  | 从 **所有 key** 中随机淘汰。                            |
 | **volatile-ttl**    | 从 **设置了过期时间的 key** 中淘汰 **剩余 TTL 最短** 的 key。    |
@@ -22,9 +22,9 @@ allkeys-*：在 所有 key 中淘汰
 
 2️⃣ 淘汰算法
 
-lru：最近最少使用 （Least Recently Used）
+lru：最近使用最少 （Least Recently Used）
 
-lfu：使用频率最低 (Least Frequently Used)
+lfu：频率使用最低 (Least Frequently Used)
 
 random：随机
 
