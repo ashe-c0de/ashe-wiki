@@ -49,11 +49,9 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
-  font:
+#  font:
 #    text: Noto Serif SC
 #    code: JetBrains Mono
-    text: Roboto Slab
-    code: Roboto Mono
 
 plugins:
   - search:
@@ -129,18 +127,18 @@ nav:
           - Grammar: lang/markdown/grammar.md
       - Git:
           - Grammar: lang/git/grammar.md
-      - Dp:
+      - Design Pattern:
           - TODO: lang/dp/todo.md
           - Singleton: lang/dp/singleton.md
-      - Algo:
-          - TODO: lang/algo/todo.md
-          - Two Pointer Algorithm: lang/algo/two-pointer.md
-          - Expand Around Center Algorithm: lang/algo/expand-around-center.md
-          - Manacher Algorithm: lang/algo/manacher.md
-          - Sliding Window Algorithm: lang/algo/sliding-window.md
+      - Data Structures and Algorithms:
+          - Introduction to Big O Notation: lang/dsa/big-o.md
+          - Two Pointer Algorithm: lang/dsa/two-pointer.md
+          - Expand Around Center Algorithm: lang/dsa/expand-around-center.md
+          - Manacher Algorithm: lang/dsa/manacher.md
+          - Sliding Window Algorithm: lang/dsa/sliding-window.md
 
 
-  - Db:
+  - Database:
       - Bruce Lee: db/index.md
       - MySQL: 
           - index: db/mysql/ix.md
@@ -165,7 +163,14 @@ nav:
           - SpringBoot引入es启动失败: db/elasticsearch/sb-es.md   
           - 安装Kibana: db/elasticsearch/kibana.md   
           - ELK收集SpringBoot日志: db/elasticsearch/elk.md   
-  
+
+  - Systems:
+      - Unknown: systems/index.md
+      - OS: 
+          - TODO: systems/os/todo.md
+      - Net:
+          - TODO: systems/net/todo.md  
+
   - DevOps:
       - Longstreet: devops/index.md
       - Transactional-mq: devops/transactional-mq.md
@@ -178,12 +183,7 @@ nav:
       - CentOS安装GitLab社区版: devops/gitlab.md 
       - GitLab社区版CI/CD实现: devops/gitlab-ci.md
        
-  - Systems:
-      - Unknown: systems/index.md
-      - OS: 
-          - TODO: systems/os/todo.md
-      - Net:
-          - TODO: systems/net/todo.md  
+
 
   - Other:
       - 八代学: other/index.md
