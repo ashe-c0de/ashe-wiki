@@ -132,10 +132,11 @@ nav:
           - Singleton: lang/dp/singleton.md
       - Data Structures and Algorithms:
           - Introduction to Big O Notation: lang/dsa/big-o.md
-          - Two Pointer Algorithm: lang/dsa/two-pointer.md
-          - Expand Around Center Algorithm: lang/dsa/expand-around-center.md
-          - Manacher Algorithm: lang/dsa/manacher.md
-          - Sliding Window Algorithm: lang/dsa/sliding-window.md
+          - Two Pointer: lang/dsa/two-pointer.md
+          - Expand Around Center: lang/dsa/expand-around-center.md
+          - Manacher: lang/dsa/manacher.md
+          - Sliding Window: lang/dsa/sliding-window.md
+          - Prefix Sum: lang/dsa/prefix-sum.md
 
 
   - Database:
