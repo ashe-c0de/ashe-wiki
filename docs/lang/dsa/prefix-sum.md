@@ -44,4 +44,10 @@ Input: nums = [1,2,3], k = 3
 
 Output: 2 
 
+经由上面对prefix sum的推演，我们已知
+
+`当前前缀和 - 历史前缀和 = 中间这段子数组的和`
+
+那么当前问题：子数组和为k的总数，就是用一个数据结构（哈希表）记录所有前缀和。如果历史前缀和=当前前缀和-k，那么中间这段子数组的和必然等于k(累加该case的次数res)，遍历数组结束后res的值即为答案。
+
 [Go代码示例](https://github.com/ashe-c0de/lang-lab/blob/main/golang/algorithm/prefix-sum.go)
