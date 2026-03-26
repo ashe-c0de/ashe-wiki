@@ -1,6 +1,6 @@
 
 
-![](https://github.com/ashe-c0de/wiki-src/blob/main/systmes/internet.png)
+![](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/systmes/internet.png)
 
 一般而言，互联网被认为由三个部分组成：
 
