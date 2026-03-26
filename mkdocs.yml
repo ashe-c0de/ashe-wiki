@@ -152,6 +152,7 @@ nav:
           - 脏读、不可重复读、幻读: db/mysql/dirty-read.md
           - mvcc: db/mysql/mvcc.md
           - join: db/mysql/join.md
+          - slow query log: db/mysql/slow-query-log.md
       - Redis:
           - struct: db/redis/struct.md    
           - big key problem: db/redis/big-key-problem.md    
