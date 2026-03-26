@@ -23,7 +23,7 @@ SET GLOBAL log_queries_not_using_indexes = 'ON';
 
 ### 2、永久开启（修改配置文件）
 
-编辑 my.cnf，在 [mysqld] 下添加：
+编辑`my.cnf` (Linux) ，在 [mysqld] 下添加：
 
 ```
 [mysqld]
