@@ -111,6 +111,8 @@ You already use mappings → this compounds over time
 
 `Space + B` 条件断点
 
+`F5` debug启动
+
 `F10` step over 向前（同级平移）
 
 `F11` step into 向内（进入子函数）
