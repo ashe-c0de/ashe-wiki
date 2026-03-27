@@ -173,6 +173,7 @@ nav:
       - OS: 
           - Overview: systems/os/overview.md
           - Execution: systems/os/execution.md
+          - Less: systems/os/less.md
       - Net:
           - Overview: systems/net/overview.md
 
