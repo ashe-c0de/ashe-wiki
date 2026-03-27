@@ -105,6 +105,19 @@ You already use mappings → this compounds over time
 
 使用记事本打开，可以选择删除缓存错误的project目录
 
+## Go Debugging (DAP)
+
+`Space + b` 当前行打断点/取消断点
+
+`Space + B` 条件断点
+
+`F10` step over 向前（同级平移）
+
+`F11` step into 向内（进入子函数）
+
+`F12` step out 向外（回到父函数）
+
+
 ## 模式切换
 
 | 模式名称 | 进入方式 | 主要用途 |
