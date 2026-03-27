@@ -172,6 +172,7 @@ nav:
       - Unknown: systems/index.md
       - OS: 
           - Overview: systems/os/overview.md
+          - Execution: systems/os/execution.md
       - Net:
           - Overview: systems/net/overview.md
 
