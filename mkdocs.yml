@@ -192,5 +192,5 @@ nav:
   - Other:
       - 八代学: other/index.md
       - Tools: 
-          - Nvim: other/tools/nvim.md
+          - WezTerm + Neovim: other/tools/nvim.md
           - Scoop: other/tools/scoop.md

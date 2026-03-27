@@ -1,4 +1,24 @@
+## Why WezTerm + Neovim fits backend developers
 
+**Full control**
+
+You already tweak configs → Neovim + WezTerm is basically programmable IDE
+
+**Performance**
+
+No Electron overhead
+
+**Remote/devops friendly**
+
+SSH, Docker, servers → terminal-native workflow is smoother
+
+**Keyboard-driven efficiency**
+
+You already use mappings → this compounds over time
+
+
+> [我的wezterm的.wezterm.lua](https://github.com/ashe-c0de/dotfiles-env/blob/main/wezterm/.wezterm.lua)
+> 
 > [我的neovim的init.lua](https://github.com/ashe-c0de/dotfiles-env/blob/main/neovim/init.lua)
 
 ## 常用快捷键
