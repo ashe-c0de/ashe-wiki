@@ -105,7 +105,7 @@ You already use mappings → this compounds over time
 
 使用记事本打开，可以选择删除缓存错误的project目录
 
-## Go Debugging (DAP)
+## Go Debugging (nvim-dap插件)
 
 `Space + b` 当前行打断点/取消断点
 
