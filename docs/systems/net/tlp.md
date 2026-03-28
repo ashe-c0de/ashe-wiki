@@ -12,6 +12,9 @@
 | **Link Layer（链路层）** | Frame（帧） | Ethernet, Wi-Fi | 交换机 |
 | **Physical Layer（物理层）** | Bit（比特流） | \ | 光纤/光缆 |
 
+以下是网络传输的示意图
+![](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/systmes/tlp.png)
+
 ---
 
 ## 2. 实例解析：HTTP 与 TCP 的协作
