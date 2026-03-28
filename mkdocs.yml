@@ -176,7 +176,7 @@ nav:
           - Less: systems/os/less.md
       - Net:
           - Overview: systems/net/overview.md
-          - Transport Layer Protocols: systems/net/tlp.md
+          - Internet Layers: systems/net/il.md
           - RPC vs REST: systems/net/rpc.md
 
   - DevOps:
