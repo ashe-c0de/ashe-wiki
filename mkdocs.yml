@@ -176,6 +176,7 @@ nav:
           - Less: systems/os/less.md
       - Net:
           - Overview: systems/net/overview.md
+          - RPC vs REST: systems/net/rpc.md
 
   - DevOps:
       - Longstreet: devops/index.md
