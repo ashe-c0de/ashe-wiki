@@ -7,9 +7,6 @@ git config --global user.name "Your Name"
 # 设置你的邮箱 (必须和 GitHub/Gitee 账号一致，否则没绿点)
 git config --global user.email "your.email@example.com"
 
-# 查看配置有没有设对
-git config --list
-
 # 快捷键映射
 git config --global alias.st status
 git config --global alias.co checkout
@@ -20,6 +17,9 @@ git config --global alias.last "log -1 HEAD"
 - git st 代替 git status
 - git co 代替 git checkout
 ```
+
+# verify your config
+git config --list
 
 ## Undo
 
