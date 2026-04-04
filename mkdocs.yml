@@ -168,16 +168,18 @@ nav:
           - 安装Kibana: db/elasticsearch/kibana.md   
           - ELK收集SpringBoot日志: db/elasticsearch/elk.md   
 
-  - Systems:
-      - Unknown: systems/index.md
+  - Infrastructure:
+      - Unknown: infra/index.md
       - OS: 
-          - Overview: systems/os/overview.md
-          - Execution: systems/os/execution.md
-          - Less: systems/os/less.md
+          - Overview: infra/os/overview.md
+          - Execution: infra/os/execution.md
+          - Less: infra/os/less.md
       - Net:
-          - Overview: systems/net/overview.md
-          - Internet Layers: systems/net/il.md
-          - RPC vs REST: systems/net/rpc.md
+          - Overview: infra/net/overview.md
+          - Internet Layers: infra/net/il.md
+          - RPC vs REST: infra/net/rpc.md
+      - Hardware:
+          - Touchpad: infra/hw/touchpad.md    
 
   - DevOps:
       - Longstreet: devops/index.md
