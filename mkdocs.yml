@@ -179,7 +179,14 @@ nav:
           - Internet Layers: infra/net/il.md
           - RPC vs REST: infra/net/rpc.md
       - Hardware:
-          - Touchpad: infra/hw/touchpad.md    
+          - Touchpad: infra/hw/touchpad.md
+
+  - Intelligence:
+      - Buddha: ix/index.md
+      - Agents:
+          - Opencode: ix/agents/opencode.md
+      - Protocols: ix/protocols/todo.md
+      - Models: ix/llm/todo.md
 
   - DevOps:
       - Longstreet: devops/index.md
