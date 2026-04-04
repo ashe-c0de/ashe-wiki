@@ -15,7 +15,7 @@ AI Agent = 大模型（思考） + 工具（执行） + 记忆（上下文） + 
 
 简而言之，从最开始的human-llm交互，变成了human-agent交互。
 
-> 本身我是打算使用claude code & openrouter提供的免费llm key来演示，但是anthropic刚刚发布更新，似乎禁止了第三方llm model的接入，打算要求用户使用其claude llm或其规定范围内的llm model，因此使用opencode演示AI Agent
+> 本身我是打算使用claude code（接入openrouter提供的免费llm key）来演示，但是anthropic刚刚发布更新，似乎禁止了第三方llm model的接入，打算要求用户使用其claude llm或其规定范围内的llm model，因此使用opencode演示AI Agent
 
 *website* https://opencode.ai/
 
