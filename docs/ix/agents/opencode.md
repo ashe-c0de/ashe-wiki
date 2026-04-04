@@ -7,7 +7,7 @@ AI Agent = 大模型（思考） + 工具（执行） + 记忆（上下文） + 
 > 
 > 在执行任务的时候，AI Agent 会调用os的API来触发行为动作
 > 
-> 就像用户在与llm对话的时候，Human-LLM Context是非常关键的边界和范围，而human与AI Agent 交互也存在Human-Agent Context
+> 就像human在与llm对话的时候，Human-LLM Context是非常关键的边界和范围，而human与AI Agent 交互也存在Human-Agent Context
 > 
 > 而人类input的目标需求就是驱动整个AI Agent 完成任务的触发器。
 
