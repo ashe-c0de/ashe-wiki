@@ -3,7 +3,7 @@
 AI Agent = 大模型（思考） + 工具（执行） + 记忆（上下文） + 目标（驱动）
 
 
-> 人们常说的大语言模型/大模型（chagpt/gemini/qwen……），其实就是Large Language Model (LLM) 
+> 人们常说的大语言模型/大模型（chatgpt/gemini/qwen……），其实就是Large Language Model (LLM) 
 > 
 > 在执行任务的时候，AI Agent 会调用os的API来触发行为动作
 > 
