@@ -1,4 +1,5 @@
 ---
 comments: false
 ---
-As you think, so shall you become.
+
+> Don't fear failure. — Not failure, but low aim, is the crime. In great attempts it is glorious even to fail.
