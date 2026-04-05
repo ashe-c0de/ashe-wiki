@@ -46,6 +46,6 @@ public class AppleService {
 
 除此之外，依赖注入的方式在不同的project中也是千奇百怪，常见的有构造器注入、`@Autowired`注入、`@Resource`注入、`@RequiredArgsConstructor`注入。
 
-当一个类中需要注入很多依赖时，建议使用`@RequiredArgsConstructor`来简化代码（使用`@Resource`结合`@Lazy``@Qualifier`应对特殊情况）。
+当一个类中需要注入很多依赖时，建议使用`@RequiredArgsConstructor`来简化代码（使用`@Resource`结合`@Lazy`、`@Qualifier`应对特殊情况）。
 
 > 构造器注入是 Spring 中最推荐的依赖注入方式，通过构造器注入，可以强制要求在创建类的实例时提供所有必需的依赖项，从而确保类的实例始终处于一个有效状态。这也使得依赖项的传递变得明确和类型安全。如果可能的话，尽量使用构造器注入。
