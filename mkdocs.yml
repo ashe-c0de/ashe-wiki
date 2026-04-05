@@ -184,7 +184,7 @@ nav:
   - Intelligence:
       - Buddha: ix/index.md
       - Agents:
-          - Opencode: ix/agents/opencode.md
+          - opencode: ix/agents/opencode.md
       - Protocols: ix/protocols/todo.md
       - Models: ix/llm/todo.md
 
