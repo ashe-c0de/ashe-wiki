@@ -3,8 +3,9 @@
 
 建议使用scoop安装
 
-`scoop install temurin21-jdk`
-
+```bash
+scoop install temurin21-jdk
+```
 - JDK 8/11: scoop install temurin8-jdk
 
 - Oracle JDK: scoop install oraclejdk
@@ -15,9 +16,12 @@
 
 推荐使用Homebrew安装
 
-`brew install --cask temurin21`
-
+```bash
+brew install --cask temurin21
+```
 
 ## 验证
 
-`java -version`
+```bash
+java -version
+```
