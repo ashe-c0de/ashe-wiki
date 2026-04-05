@@ -213,3 +213,4 @@ nav:
       - Tools: 
           - WezTerm + Neovim: other/tools/nvim.md
           - Scoop: other/tools/scoop.md
+          - ssh gui: other/tools/ssh-gui.md
