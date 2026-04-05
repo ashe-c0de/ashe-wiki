@@ -1,5 +1,5 @@
 
-## Windos
+## Windows
 
 建议使用scoop安装
 
