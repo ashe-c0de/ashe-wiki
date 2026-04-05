@@ -10,4 +10,4 @@ mkdocs serve
 
 
 // 图片
-https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/<path>/<name>.png
+![](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/<path>/<name>.png)

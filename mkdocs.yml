@@ -116,7 +116,10 @@ nav:
       # - Meditation:
       #     - "2025-12-14": lang/meditation/2025-12-14-diary.md
       - Java:
+          - env: lang/java/env.md
           - Lambda表达式: lang/java/lambda.md
+          - mvc: lang/java/mvc.md
+          - Fixing Circular Dependencies in MyBatis-Plus: lang/java/di.md
       - Rust:
           - Environment: lang/rust/environment.md
           - Declare-variables: lang/rust/declare-variables.md
