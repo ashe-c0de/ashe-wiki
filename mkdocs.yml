@@ -115,6 +115,8 @@ nav:
           - "memory-allocator": lang/go/memory-allocator.md
       # - Meditation:
       #     - "2025-12-14": lang/meditation/2025-12-14-diary.md
+      - Java:
+          - Lambda表达式: lang/java/lambda.md
       - Rust:
           - Environment: lang/rust/environment.md
           - Declare-variables: lang/rust/declare-variables.md
