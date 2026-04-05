@@ -6,6 +6,7 @@
 ```bash
 scoop install temurin21-jdk
 ```
+
 - JDK 8/11: scoop install temurin8-jdk
 
 - Oracle JDK: scoop install oraclejdk
