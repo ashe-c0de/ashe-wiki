@@ -1,4 +1,4 @@
 ---
 comments: true
 ---
-善行も悪行も本質は同じ、人が自らの欠陥を補う為の行いに過ぎない。
+Was mich nicht umbringt, macht mich stärker.

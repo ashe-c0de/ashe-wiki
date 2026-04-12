@@ -12,7 +12,7 @@ comments: false
 
 <h2>Ashe</h2>
 
-<p><b>Backend Developer</b> · Go · Java · Rust</p>
+<p><b>Backend Developer</b> · Go · Java · Python · Rust</p>
 
 <p>
 <a href="https://github.com/ashe-c0de">

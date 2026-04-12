@@ -100,7 +100,7 @@ nav:
   - Home: index.md
 
   - Lang:
-      - Nietzsche: lang/index.md
+      - Who am I: lang/index.md
       - Go:
           - "slice": lang/go/slice.md
           - "map": lang/go/map.md
@@ -113,14 +113,19 @@ nav:
           - "context": lang/go/context.md
           - "gmp": lang/go/gmp.md
           - "memory-allocator": lang/go/memory-allocator.md
-      # - Meditation:
-      #     - "2025-12-14": lang/meditation/2025-12-14-diary.md
+
       - Java:
           - env: lang/java/env.md
           - jvm memory structure: lang/java/jvm-memory-structure.md
           - Lambda表达式: lang/java/lambda.md
           - mvc: lang/java/mvc.md
           - Fixing Circular Dependencies in MyBatis-Plus: lang/java/di.md
+      
+      - Python:
+          - env: lang/python/env.md
+          - input-output: lang/python/input-output.md
+          - variables: lang/python/variables.md
+
       - Rust:
           - Environment: lang/rust/environment.md
           - Declare-variables: lang/rust/declare-variables.md
@@ -209,7 +214,7 @@ nav:
 
 
   - Other:
-      - 八代学: other/index.md
+      - Nietzsche: other/index.md
       - Tools: 
           - WezTerm + Neovim: other/tools/nvim.md
           - Scoop: other/tools/scoop.md

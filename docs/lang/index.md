@@ -1,4 +1,4 @@
 ---
 comments: false
 ---
-Was mich nicht umbringt, macht mich stärker.
+Life is not about finding yourself but creating yourself.
