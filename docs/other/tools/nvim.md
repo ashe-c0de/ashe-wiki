@@ -17,7 +17,7 @@ SSH, Docker, servers → terminal-native workflow is smoother
 You already use mappings → this compounds over time
 
 
-> [我的wezterm的.wezterm.lua](https://github.com/ashe-c0de/dotfiles-env/blob/main/wezterm/.wezterm.lua)
+> [我的wezterm的.wezterm.lua](https://github.com/ashe-c0de/dotfiles-env/blob/main/wezterm/for-windows-.wezterm.lua)
 > 
 > [我的neovim的init.lua](https://github.com/ashe-c0de/dotfiles-env/blob/main/neovim/init.lua)
 
