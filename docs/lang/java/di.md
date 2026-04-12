@@ -2,9 +2,7 @@
 
 举个例子，比如在`CarService`这个class中，需要使用到`DriverService`提供的某些功能，我们不妨称`DriverService`为`CarService`所需要的依赖，并将其注入到`CarService`中，使class拥有了新的成员变量`DriverService`实例，由此class便可使用`DriverService`的功能。
 
-映射到现实生活，就是有一个提供WIFI的路由器，大家的手机在没有流量的前提下，都需要连接WIFI才能接入Internet，但不必每部手机都配备一台提供WIFI的路由器。
-
-再回到代码世界，接口层Controller、业务层Service、数据库层Dao/Repository这种包结构的规范，其实就对应着依赖注入的具体表现，我们在接口层注入Service，在业务层注入Repository……
+接口层Controller、业务层Service、数据库层Dao/Repository这种包结构的规范，其实就对应着依赖注入的具体表现，我们在接口层注入Service，在业务层注入Repository……
 
 在一些不遵守规范的project中，如果业务层和数据库层划分不明确，发生了耦合，这就非常容易引发循环依赖的问题。
 
