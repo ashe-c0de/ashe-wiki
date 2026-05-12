@@ -142,6 +142,7 @@ nav:
           - Grammar: lang/git/grammar.md
       - Docker:
           - Grammar: lang/docker/grammar.md
+          - Setup: lang/docker/Docker setup guide.md
       - Design Pattern:
           - TODO: lang/dp/todo.md
           - Singleton: lang/dp/singleton.md
