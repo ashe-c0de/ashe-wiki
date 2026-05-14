@@ -140,6 +140,7 @@ nav:
           - Grammar: lang/markdown/grammar.md
       - Git:
           - Grammar: lang/git/grammar.md
+          - Tag: lang/git/tag.md
       - Docker:
           - Grammar: lang/docker/grammar.md
           - Setup: lang/docker/setup-guide.md
