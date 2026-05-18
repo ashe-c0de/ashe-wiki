@@ -141,6 +141,7 @@ nav:
       - Git:
           - Grammar: lang/git/grammar.md
           - Tag: lang/git/tag.md
+          - Storage-model: lang/git/storage-model.md
       - Docker:
           - Grammar: lang/docker/grammar.md
           - Setup: lang/docker/setup-guide.md
