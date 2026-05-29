@@ -199,10 +199,13 @@ nav:
 
   - Intelligence:
       - Buddha: ix/index.md
+      - Models:
+          - transformer: ix/llm/transformer.md
+      - Protocols: ix/protocols/todo.md
       - Agents:
           - opencode: ix/agents/opencode.md
-      - Protocols: ix/protocols/todo.md
-      - Models: ix/llm/todo.md
+
+
 
   - DevOps:
       - Longstreet: devops/index.md
