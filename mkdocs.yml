@@ -190,6 +190,7 @@ nav:
           - Overview: infra/os/overview.md
           - Execution: infra/os/execution.md
           - Less: infra/os/less.md
+          - Vim: infra/os/vim.md
       - Net:
           - Overview: infra/net/overview.md
           - Internet Layers: infra/net/il.md
