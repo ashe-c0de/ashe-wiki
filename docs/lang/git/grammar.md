@@ -10,12 +10,13 @@ git config --global user.email "your.email@example.com"
 # 快捷键映射
 git config --global alias.st status
 git config --global alias.co checkout
-git config --global alias.cm "commit -m"
+git config --global alias.cm '!f() { git commit -m "$*"; }; f'
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.last "log -1 HEAD"
 - git st 代替 git status
 - git co 代替 git checkout
+- git cm fix xxx 代替 git commit -m 'fix xxx'
 ```
 
 # verify your config
