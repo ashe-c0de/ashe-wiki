@@ -202,10 +202,10 @@ nav:
   - Intelligence:
       - Buddha: ix/index.md
       - Models:
-          - transformer: ix/llm/transformer.md
+          - transformer: ix/model/transformer.md
       - Protocols: ix/protocols/todo.md
       - Agents:
-          - opencode: ix/agents/opencode.md
+          - opencode: ix/agent/opencode.md
 
 
 
