@@ -203,6 +203,7 @@ nav:
       - Buddha: ix/index.md
       - Models:
           - transformer: ix/model/transformer.md
+          - tokenization: ix/model/tokenization.md
       - Protocols: ix/protocols/todo.md
       - Agents:
           - opencode: ix/agent/opencode.md
