@@ -206,6 +206,7 @@ nav:
           - tokenization: ix/model/tokenization.md
       - Protocols: ix/protocols/todo.md
       - Agents:
+          - overview: ix/agent/overview.md
           - opencode: ix/agent/opencode.md
 
 
