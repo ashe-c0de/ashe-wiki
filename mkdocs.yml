@@ -207,6 +207,7 @@ nav:
       - Protocols: ix/protocols/todo.md
       - Agents:
           - overview: ix/agent/overview.md
+          - agent-loop: ix/agent/agent-loop.md
           - opencode: ix/agent/opencode.md
 
 
