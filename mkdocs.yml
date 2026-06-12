@@ -209,6 +209,7 @@ nav:
           - overview: ix/agent/overview.md
           - agent-loop: ix/agent/agent-loop.md
           - autonomy-vs-tooling: ix/agent/autonomy-vs-tooling.md
+          - bounded-context: ix/agent//bounded-context.md
           - opencode: ix/agent/opencode.md
 
 
