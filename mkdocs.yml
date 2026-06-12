@@ -208,6 +208,7 @@ nav:
       - Agents:
           - overview: ix/agent/overview.md
           - agent-loop: ix/agent/agent-loop.md
+          - autonomy-vs-tooling: ix/agent/autonomy-vs-tooling.md
           - opencode: ix/agent/opencode.md
 
 
