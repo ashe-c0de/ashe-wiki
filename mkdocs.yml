@@ -204,13 +204,16 @@ nav:
       - Models:
           - transformer: ix/model/transformer.md
           - tokenization: ix/model/tokenization.md
-      - Protocols: ix/protocols/todo.md
       - Agents:
-          - overview: ix/agent/overview.md
-          - agent-loop: ix/agent/agent-loop.md
-          - autonomy-vs-tooling: ix/agent/autonomy-vs-tooling.md
-          - bounded-context: ix/agent//bounded-context.md
-          - opencode: ix/agent/opencode.md
+          - Overview: ix/agent/overview.md
+          - Concepts:
+              - Agent Loop: ix/agent/concepts/agent-loop.md
+              - Autonomy vs Tooling: ix/agent/concepts/autonomy-vs-tooling.md
+              - Bounded Context: ix/agent/concepts/bounded-context.md
+
+          - Cases:
+              - OpenCode: ix/agent/cases/opencode.md
+      - Protocols: ix/protocols/todo.md
 
 
 

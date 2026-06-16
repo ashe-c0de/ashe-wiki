@@ -44,3 +44,12 @@ Agents
 │   └── failure-modes.md
 │
 └── opencode.md
+
+
+Agents
+├── overview.md
+├── concepts/
+├── patterns/
+├── capabilities/
+├── evaluation/
+└── case-studies/
