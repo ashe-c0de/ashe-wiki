@@ -8,7 +8,7 @@ Python is an object-oriented programming (OOP) language. OOP helps you structure
 
 A class is a blueprint for creating objects.
 
-```python id="a1b2c3"
+```python
 class Person:
     pass
 ```
@@ -19,7 +19,7 @@ class Person:
 
 An object is an instance of a class.
 
-```python id="d4e5f6"
+```python
 class Person:
     pass
 
@@ -33,7 +33,7 @@ print(p1)
 
 The constructor is called when an object is created.
 
-```python id="g7h8i9"
+```python
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -51,7 +51,7 @@ print(p1.age)
 
 Variables defined using `self` belong to each object.
 
-```python id="j1k2l3"
+```python
 class Person:
     def __init__(self, name):
         self.name = name
@@ -69,7 +69,7 @@ print(p2.name)
 
 Methods inside a class operate on object data.
 
-```python id="m4n5o6"
+```python
 class Person:
     def __init__(self, name):
         self.name = name
@@ -87,7 +87,7 @@ p1.greet()
 
 `self` refers to the current object.
 
-```python id="p7q8r9"
+```python
 class Person:
     def show(self):
         print(self)
@@ -102,7 +102,7 @@ p1.show()
 
 Each object has its own data.
 
-```python id="s1t2u3"
+```python
 class Person:
     def __init__(self, name):
         self.name = name
@@ -120,7 +120,7 @@ print(p2.name)
 
 ### Class Variable (shared)
 
-```python id="v4w5x6"
+```python
 class Person:
     species = "Human"
 
@@ -129,7 +129,7 @@ print(Person.species)
 
 ### Instance Variable (unique)
 
-```python id="y7z8a9"
+```python
 class Person:
     def __init__(self, name):
         self.name = name
@@ -139,7 +139,7 @@ class Person:
 
 ## Simple Example
 
-```python id="b1c2d3"
+```python
 class Dog:
     def __init__(self, name):
         self.name = name
