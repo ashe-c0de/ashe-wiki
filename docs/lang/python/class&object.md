@@ -153,6 +153,17 @@ d1.bark()
 
 ---
 
+## Null Check
+
+```
+x = None
+
+if x is None:
+    print("x has no value")
+```
+
+---
+
 ## Summary
 
 * A **class** is a blueprint
