@@ -36,6 +36,7 @@ Install industry-standard tools to keep your code clean and consistent:
 pip install --upgrade pip
 pip install black isort
 ```
+
 - **[Black](https://black.readthedocs.io/)**: The uncompromising Python code formatter.
 
 - **[isort](https://pycqa.github.io/isort/)**: A utility to sort your Python imports alphabetically and automatically separated into sections.
