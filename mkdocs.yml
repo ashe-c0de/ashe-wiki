@@ -122,18 +122,21 @@ nav:
           - Fixing Circular Dependencies in MyBatis-Plus: lang/java/di.md
       
       - Python:
-          - env: lang/python/env.md
-          - hello python: lang/python/hello-python.md
-          - input-output: lang/python/input-output.md
-          - variables: lang/python/variables.md
-          - data types: lang/python/data-types.md
-          - function: lang/python/function.md
-          - collections: lang/python/collections.md
-          - condition & loop: lang/python/condition&loop.md
-          - module & package: lang/python/module&package.md
-          - file I/O: lang/python/file-i\o.md
-          - class & object: lang/python/class&object.md
-          - exception: lang/python/exception.md
+          - basic:
+              - env: lang/python/basic/env.md
+              - hello python: lang/python/basic/hello-python.md
+              - input-output: lang/python/basic/input-output.md
+              - variables: lang/python/basic/variables.md
+              - data types: lang/python/basic/data-types.md
+              - function: lang/python/basic/function.md
+              - collections: lang/python/basic/collections.md
+              - condition & loop: lang/python/basic/condition&loop.md
+              - module & package: lang/python/basic/module&package.md
+              - file I/O: lang/python/basic/file-i\o.md
+              - class & object: lang/python/basic/class&object.md
+              - exception: lang/python/basic/exception.md
+          - advance:
+              - annotated: lang/python/advance/annotated.md
 
       - Rust:
           - Environment: lang/rust/environment.md
