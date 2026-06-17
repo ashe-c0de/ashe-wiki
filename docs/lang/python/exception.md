@@ -8,7 +8,7 @@ Python provides `try`, `except`, `else`, and `finally` to handle errors graceful
 
 ## Basic try-except
 
-```python id="a1b2d3"
+```python
 try:
     result = 10 / 0
 except:
@@ -21,7 +21,7 @@ except:
 
 It is better to catch specific errors.
 
-```python id="e4f5g6"
+```python
 try:
     result = 10 / 0
 except ZeroDivisionError:
@@ -32,7 +32,7 @@ except ZeroDivisionError:
 
 ## Multiple Exceptions
 
-```python id="h7i8j9"
+```python
 try:
     value = int("abc")
 except ZeroDivisionError:
@@ -47,7 +47,7 @@ except ValueError:
 
 Runs only if no exception occurs.
 
-```python id="k1l2m3"
+```python
 try:
     result = 10 / 2
 except ZeroDivisionError:
@@ -58,7 +58,7 @@ else:
 
 ### Output
 
-```text id="n4o5p6"
+```text
 Success: 5.0
 ```
 
@@ -68,7 +68,7 @@ Success: 5.0
 
 Always runs, whether there is an error or not.
 
-```python id="q7r8s9"
+```python
 try:
     file = open("test.txt", "r")
     content = file.read()
@@ -84,7 +84,7 @@ finally:
 
 You can manually raise errors using `raise`.
 
-```python id="t1u2v3"
+```python
 age = -1
 
 if age < 0:
@@ -95,7 +95,7 @@ if age < 0:
 
 ## Custom Exception Handling Pattern
 
-```python id="w4x5y6"
+```python 
 def divide(a, b):
     if b == 0:
         raise ValueError("b cannot be zero")
