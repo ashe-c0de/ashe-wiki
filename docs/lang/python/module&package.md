@@ -14,7 +14,7 @@ A module is a single Python file (`.py`) that contains functions, variables, or 
 
 **utils.py**
 
-```python id="m1k2p9"
+```python
 def greet(name):
     print(f"Hello {name}")
 
@@ -28,7 +28,7 @@ def add(a, b):
 
 **main.py**
 
-```python id="k8q2lm"
+```python
 import utils
 
 utils.greet("Alice")
@@ -37,7 +37,7 @@ print(utils.add(2, 3))
 
 ### Output
 
-```text id="x9m2aa"
+```text
 Hello Alice
 5
 ```
@@ -46,7 +46,7 @@ Hello Alice
 
 ### Import Specific Functions
 
-```python id="p0v7kk"
+```python
 from utils import greet, add
 
 greet("Bob")
@@ -57,7 +57,7 @@ print(add(10, 20))
 
 ### Import with Alias
 
-```python id="q8t1zd"
+```python
 import utils as u
 
 u.greet("Charlie")
@@ -71,7 +71,7 @@ Python comes with many built-in modules.
 
 ### Example: math
 
-```python id="c3n8fd"
+```python
 import math
 
 print(math.sqrt(16))
@@ -82,7 +82,7 @@ print(math.pi)
 
 ### Example: random
 
-```python id="r2p9xq"
+```python
 import random
 
 print(random.randint(1, 10))
@@ -111,7 +111,7 @@ mypackage/
 
 ### math_utils.py
 
-```python id="t6v1aa"
+```python
 def multiply(a, b):
     return a * b
 ```
@@ -120,7 +120,7 @@ def multiply(a, b):
 
 ### Import from Package
 
-```python id="u7k2bb"
+```python
 from mypackage import math_utils
 
 print(math_utils.multiply(3, 4))
@@ -130,7 +130,7 @@ print(math_utils.multiply(3, 4))
 
 ### Import Specific Function from Package
 
-```python id="v9n3cc"
+```python
 from mypackage.math_utils import multiply
 
 print(multiply(5, 6))
