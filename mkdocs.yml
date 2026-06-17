@@ -126,7 +126,14 @@ nav:
           - hello python: lang/python/hello-python.md
           - input-output: lang/python/input-output.md
           - variables: lang/python/variables.md
+          - data types: lang/python/data-types.md
           - function: lang/python/function.md
+          - collections: lang/python/collections.md
+          - condition & loop: lang/python/condition&loop.md
+          - module & package: lang/python/module&package.md
+          - file I/O: lang/python/file-i\o.md
+          - class & object: lang/python/class&object.md
+          - exception: lang/python/exception.md
 
       - Rust:
           - Environment: lang/rust/environment.md
