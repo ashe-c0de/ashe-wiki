@@ -126,6 +126,7 @@ nav:
           - hello python: lang/python/hello-python.md
           - input-output: lang/python/input-output.md
           - variables: lang/python/variables.md
+          - function: lang/python/function.md
 
       - Rust:
           - Environment: lang/rust/environment.md
