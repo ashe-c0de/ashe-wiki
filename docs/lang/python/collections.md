@@ -136,6 +136,19 @@ print(a - b)  # Difference
 
 ---
 
+## Null Check
+
+```
+items = []
+
+if items is None:
+    print("no items were provided")
+elif not items:
+    print("items were provided, but the list is empty")
+```
+
+---
+
 ## Summary
 
 * Use **list** for ordered, changeable data
