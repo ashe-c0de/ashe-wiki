@@ -123,6 +123,7 @@ nav:
       
       - Python:
           - env: lang/python/env.md
+          - hello python: lang/python/hello-python.md
           - input-output: lang/python/input-output.md
           - variables: lang/python/variables.md
 
