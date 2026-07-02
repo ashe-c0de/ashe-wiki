@@ -167,6 +167,7 @@ nav:
           - Manacher: lang/dsa/manacher.md
           - Sliding Window: lang/dsa/sliding-window.md
           - Prefix Sum: lang/dsa/prefix-sum.md
+          - Hello Algo: lang/dsa/hello-algo.md
 
 
   - Database:
