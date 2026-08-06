@@ -19,7 +19,7 @@ git config --global alias.last "log -1 HEAD"
 - git cm fix xxx 代替 git commit -m 'fix xxx'
 ```
 
-# verify your config
+## verify your config
 git config --list
 
 ## Undo
@@ -86,4 +86,40 @@ git rebase main
 ```bash
 git cherry-pick <commit-hash>
 ```
+
+## Workflow Paradigm
+
+### 分支策略
+- `dev` — 公共开发分支（主干）
+- `dev-ashe` — 个人开发分支
+
+### 日常开发流程
+
+```bash
+# 1. 切换到个人分支
+git checkout dev-ashe
+
+# 2. 开发、提交代码
+git add .
+git commit -m "feat: xxx"
+
+# 3. 同步主干最新代码（rebase 保持线性历史）
+git checkout dev
+git pull origin dev
+git checkout dev-ashe
+git rebase dev
+
+# 4. 如果有冲突，解决后继续
+git add .
+git rebase --continue
+
+# 5. 推送个人分支
+git push origin dev-ashe --force-with-lease
+
+# 6. 创建 MR：dev-ashe → dev
+```
+
+- 始终在 `dev-ashe` 上开发，不直接在 `dev` 上提交
+- 用 `rebase` 而非 `merge` 同步主干，保持线性历史
+- 通过 MR 将 `dev-ashe` 合入 `dev`，提交历史干净无多余 merge commit
 
