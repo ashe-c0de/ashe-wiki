@@ -97,16 +97,16 @@ git cherry-pick <commit-hash>
 
 ```bash
 # 1. 切换到个人分支
-git checkout dev-ashe
+git co dev-ashe
 
 # 2. 开发、提交代码
 git add .
 git commit -m "feat: xxx"
 
 # 3. 同步主干最新代码（rebase 保持线性历史）
-git checkout dev
+git co dev
 git pull origin dev
-git checkout dev-ashe
+git co dev-ashe
 git rebase dev
 
 # 4. 如果有冲突，解决后继续
