@@ -36,3 +36,7 @@ Open the Command Palette (`Cmd/Ctrl + Shift + P`), search for **Preferences: Ope
 - Error Lens
 - Prettier - Code formatter
 - GitLens
+
+## 4. Proxy (if you need)
+
+![](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/other/vscode-proxy.png)
