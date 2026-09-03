@@ -132,7 +132,7 @@ nav:
               - collections: lang/python/basic/collections.md
               - condition & loop: lang/python/basic/condition&loop.md
               - module & package: lang/python/basic/module&package.md
-              - file I/O: lang/python/basic/file-i\o.md
+              - file I/O: lang/python/basic/file-io.md
               - class & object: lang/python/basic/class&object.md
               - exception: lang/python/basic/exception.md
           - advance:
