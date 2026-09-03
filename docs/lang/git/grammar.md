@@ -10,15 +10,16 @@ git config --global user.email "your.email@example.com"
 # 快捷键映射
 git config --global alias.st status
 git config --global alias.co checkout
-git config --global alias.cm "commit -m"
+git config --global alias.cm '!f() { git commit -m "$*"; }; f'
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.last "log -1 HEAD"
 - git st 代替 git status
 - git co 代替 git checkout
+- git cm fix xxx 代替 git commit -m 'fix xxx'
 ```
 
-# verify your config
+## verify your config
 git config --list
 
 ## Undo
@@ -85,4 +86,40 @@ git rebase main
 ```bash
 git cherry-pick <commit-hash>
 ```
+
+## Workflow Paradigm
+
+### 分支策略
+- `dev` — 公共开发分支（主干）
+- `dev-ashe` — 个人开发分支
+
+### 日常开发流程
+
+```bash
+# 1. 切换到个人分支
+git co dev-ashe
+
+# 2. 开发、提交代码
+git add .
+git commit -m "feat: xxx"
+
+# 3. 同步主干最新代码（rebase 保持线性历史）
+git co dev
+git pull origin dev
+git co dev-ashe
+git rebase dev
+
+# 4. 如果有冲突，解决后继续
+git add .
+git rebase --continue
+
+# 5. 推送个人分支
+git push origin dev-ashe --force-with-lease
+
+# 6. 创建 MR：dev-ashe → dev
+```
+
+- 始终在 `dev-ashe` 上开发，不直接在 `dev` 上提交
+- 用 `rebase` 而非 `merge` 同步主干，保持线性历史
+- 通过 MR 将 `dev-ashe` 合入 `dev`，提交历史干净无多余 merge commit
 

@@ -30,7 +30,7 @@ Python creates a new object for the value "Ashe" and makes x reference this new 
 The variable y remains unchanged, still referencing the original object 5. Now, If we assign a new value to y:
 
 ```python
-x = 'Computer'
+y = 'Computer'
 ```
 
 ![](https://raw.githubusercontent.com/ashe-c0de/wiki-src/refs/heads/main/python/garbage.png)

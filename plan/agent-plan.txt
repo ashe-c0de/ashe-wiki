@@ -1,0 +1,55 @@
+Agents
+├── overview.md
+│
+├── core-concepts/
+│   ├── agent-definition.md
+│   ├── agent-loop.md
+│   ├── autonomy-vs-tooling.md
+│   └── bounded-context.md
+│
+├── architecture/
+│   ├── planner-executor.md
+│   ├── react.md
+│   ├── reflection.md
+│   ├── memory-system.md
+│   └── tool-use.md
+│
+├── memory/
+│   ├── short-term-memory.md
+│   ├── long-term-memory.md
+│   ├── vector-store.md
+│   └── rag-in-agents.md
+│
+├── planning/
+│   ├── task-decomposition.md
+│   ├── tree-of-thought.md
+│   ├── graph-of-thought.md
+│   └── replanning.md
+│
+├── tools/
+│   ├── function-calling.md
+│   ├── mcp.md
+│   ├── browser-tools.md
+│   └── code-execution.md
+│
+├── multi-agent/
+│   ├── agent-communication.md
+│   ├── role-based-agents.md
+│   ├── swarms.md
+│   └── debate-and-consensus.md
+│
+├── evaluation/
+│   ├── agent-benchmarks.md
+│   ├── success-metrics.md
+│   └── failure-modes.md
+│
+└── opencode.md
+
+
+Agents
+├── overview.md
+├── concepts/
+├── patterns/
+├── capabilities/
+├── evaluation/
+└── case-studies/

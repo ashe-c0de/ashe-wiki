@@ -122,9 +122,21 @@ nav:
           - Fixing Circular Dependencies in MyBatis-Plus: lang/java/di.md
       
       - Python:
-          - env: lang/python/env.md
-          - input-output: lang/python/input-output.md
-          - variables: lang/python/variables.md
+          - basic:
+              - env: lang/python/basic/env.md
+              - hello python: lang/python/basic/hello-python.md
+              - input-output: lang/python/basic/input-output.md
+              - variables: lang/python/basic/variables.md
+              - data types: lang/python/basic/data-types.md
+              - function: lang/python/basic/function.md
+              - collections: lang/python/basic/collections.md
+              - condition & loop: lang/python/basic/condition&loop.md
+              - module & package: lang/python/basic/module&package.md
+              - file I/O: lang/python/basic/file-io.md
+              - class & object: lang/python/basic/class&object.md
+              - exception: lang/python/basic/exception.md
+          - advance:
+              - annotated: lang/python/advance/annotated.md
 
       - Rust:
           - Environment: lang/rust/environment.md
@@ -140,6 +152,11 @@ nav:
           - Grammar: lang/markdown/grammar.md
       - Git:
           - Grammar: lang/git/grammar.md
+          - Tag: lang/git/tag.md
+          - Storage-model: lang/git/storage-model.md
+      - Docker:
+          - Grammar: lang/docker/grammar.md
+          - Setup: lang/docker/setup-guide.md
       - Design Pattern:
           - TODO: lang/dp/todo.md
           - Singleton: lang/dp/singleton.md
@@ -150,6 +167,7 @@ nav:
           - Manacher: lang/dsa/manacher.md
           - Sliding Window: lang/dsa/sliding-window.md
           - Prefix Sum: lang/dsa/prefix-sum.md
+          - Hello Algo: lang/dsa/hello-algo.md
 
 
   - Database:
@@ -185,6 +203,8 @@ nav:
           - Overview: infra/os/overview.md
           - Execution: infra/os/execution.md
           - Less: infra/os/less.md
+          - Vim: infra/os/vim.md
+          - Grep: infra/os/grep.md
       - Net:
           - Overview: infra/net/overview.md
           - Internet Layers: infra/net/il.md
@@ -194,10 +214,21 @@ nav:
 
   - Intelligence:
       - Buddha: ix/index.md
+      - Models:
+          - transformer: ix/model/transformer.md
+          - tokenization: ix/model/tokenization.md
       - Agents:
-          - opencode: ix/agents/opencode.md
+          - Overview: ix/agent/overview.md
+          - Concepts:
+              - Agent Loop: ix/agent/concepts/agent-loop.md
+              - Autonomy vs Tooling: ix/agent/concepts/autonomy-vs-tooling.md
+              - Bounded Context: ix/agent/concepts/bounded-context.md
+
+          - Cases:
+              - OpenCode: ix/agent/cases/opencode.md
       - Protocols: ix/protocols/todo.md
-      - Models: ix/llm/todo.md
+
+
 
   - DevOps:
       - Longstreet: devops/index.md
