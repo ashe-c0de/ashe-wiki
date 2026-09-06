@@ -6,7 +6,7 @@ repo_name: ashe-c0de/ashe-wiki
 repo_url: https://github.com/ashe-c0de/ashe-wiki
 edit_uri: edit/v1/docs/
 
-copyright: Copyright &copy; 2024-Present <a href="https://github.com/ashe-c0de" target="_blank" rel="noopener noreferrer">Ashe</a>
+copyright: Copyright &copy; {{YEAR}} <a href="https://github.com/ashe-c0de" target="_blank" rel="noopener noreferrer">Ashe</a>
 
 theme:
   name: material
@@ -18,13 +18,13 @@ theme:
     logo: logo
 
   features:
-    - header.autohide       # 启用头部自动隐藏
+    - header.autohide # 启用头部自动隐藏
     - navigation.indexes
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.tracking
-#    - navigation.sections
-#    - navigation.expand
+    #    - navigation.sections
+    #    - navigation.expand
     - navigation.tabs
     - navigation.path
     - navigation.top
@@ -61,7 +61,6 @@ plugins:
   - glightbox
 
 markdown_extensions:
-
   - admonition
   - pymdownx.details
   - attr_list
@@ -84,8 +83,7 @@ markdown_extensions:
 
   - toc:
       permalink: true
-  - pymdownx.tilde    
-
+  - pymdownx.tilde
 
 extra_javascript:
   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
@@ -94,9 +92,7 @@ extra_javascript:
 #extra_css:
 #  - stylesheets/extra.css
 
-
 nav:
-
   - Home: index.md
 
   - Lang:
@@ -120,7 +116,7 @@ nav:
           - Lambda表达式: lang/java/lambda.md
           - mvc: lang/java/mvc.md
           - Fixing Circular Dependencies in MyBatis-Plus: lang/java/di.md
-      
+
       - Python:
           - basic:
               - env: lang/python/basic/env.md
@@ -169,10 +165,9 @@ nav:
           - Prefix Sum: lang/dsa/prefix-sum.md
           - Hello Algo: lang/dsa/hello-algo.md
 
-
   - Database:
       - Bruce Lee: db/index.md
-      - MySQL: 
+      - MySQL:
           - index: db/mysql/ix.md
           - b+tree: db/mysql/b+tree.md
           - covering-index: db/mysql/covering-index.md
@@ -183,23 +178,23 @@ nav:
           - join: db/mysql/join.md
           - slow query log: db/mysql/slow-query-log.md
       - Redis:
-          - struct: db/redis/struct.md    
-          - big key problem: db/redis/big-key-problem.md    
-          - hot key problem: db/redis/hot-key-problem.md   
-          - persistence-strategy: db/redis/persistence-strategy.md    
-          - eviction-policy: db/redis/eviction-policy.md    
+          - struct: db/redis/struct.md
+          - big key problem: db/redis/big-key-problem.md
+          - hot key problem: db/redis/hot-key-problem.md
+          - persistence-strategy: db/redis/persistence-strategy.md
+          - eviction-policy: db/redis/eviction-policy.md
           - redis-cluster: db/redis/redis-cluster.md
       - Elasticsearch:
           - 安装Elasticsearch: db/elasticsearch/install.md
           - getting-started: db/elasticsearch/getting-started.md
-          - 索引为yellow的解决方案: db/elasticsearch/yellow-index.md   
-          - SpringBoot引入es启动失败: db/elasticsearch/sb-es.md   
-          - 安装Kibana: db/elasticsearch/kibana.md   
-          - ELK收集SpringBoot日志: db/elasticsearch/elk.md   
+          - 索引为yellow的解决方案: db/elasticsearch/yellow-index.md
+          - SpringBoot引入es启动失败: db/elasticsearch/sb-es.md
+          - 安装Kibana: db/elasticsearch/kibana.md
+          - ELK收集SpringBoot日志: db/elasticsearch/elk.md
 
   - Infrastructure:
       - Unknown: infra/index.md
-      - OS: 
+      - OS:
           - Overview: infra/os/overview.md
           - Execution: infra/os/execution.md
           - Less: infra/os/less.md
@@ -228,26 +223,29 @@ nav:
               - OpenCode: ix/agent/cases/opencode.md
       - Protocols: ix/protocols/todo.md
 
-
-
   - DevOps:
       - Longstreet: devops/index.md
       - Transactional-mq: devops/transactional-mq.md
       - Cache: devops/cache.md
       - Mq-loss: devops/mq-loss.md
       - Distributed-transaction: devops/distributed-transaction.md
-      - Rate-limiting: devops/rate-limiting.md 
-      - Distributed-lock: devops/distributed-lock.md 
-      - Workflow: devops/workflow.md 
-      - CentOS安装GitLab社区版: devops/gitlab.md 
+      - Rate-limiting: devops/rate-limiting.md
+      - Distributed-lock: devops/distributed-lock.md
+      - Workflow: devops/workflow.md
+      - CentOS安装GitLab社区版: devops/gitlab.md
       - GitLab社区版CI/CD实现: devops/gitlab-ci.md
-       
-
 
   - Other:
       - Nietzsche: other/index.md
-      - Tools: 
+      - Tools:
           - WezTerm + Neovim: other/tools/nvim.md
           - Scoop: other/tools/scoop.md
           - ssh gui: other/tools/ssh-gui.md
           - Visual Studio Code: other/tools/vscode.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ashe-c0de
+    - icon: fontawesome/solid/square-rss
+      link: https://ashe-c0de.github.io
