@@ -10,9 +10,7 @@ comments: false
      width="120"
      style="border-radius:50%; box-shadow:0 6px 20px rgba(0,0,0,0.15);">
 
-<h2>Ashe</h2>
 
-<p><b>Backend Developer</b> · Go · Java · Python · Rust</p>
 
 <p>
 <a href="https://github.com/ashe-c0de">
@@ -32,10 +30,3 @@ comments: false
     <br>
     ***Live!*** *Live the wonderful life that is in you!*<br>
     *Let nothing be lost upon you.*
-
-
-
-
-
-
-
