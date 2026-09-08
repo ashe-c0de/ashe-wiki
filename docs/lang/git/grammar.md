@@ -109,7 +109,7 @@ git pull origin dev
 git co dev-ashe
 git rebase dev
 
-# 4. 如果有冲突，解决后继续
+# 4. 如果有冲突，解决后继续（无代码冲突则跳过此步骤）
 git add .
 git rebase --continue
 
