@@ -86,11 +86,14 @@ markdown_extensions:
   - pymdownx.tilde
 
 extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-  - javascripts/mermaid-init.js
+#   - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+#   - javascripts/mermaid-init.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
+  - javascripts/mermaid-zoom.js
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/mermaid.css
 
 nav:
   - Home: index.md
@@ -144,6 +147,10 @@ nav:
           - Stack&heap: lang/rust/stack&heap.md
           - Ownership: lang/rust/ownership.md
           - Web: lang/rust/web.md
+      
+      - JavaScript:
+          - Introduction: lang/js/introduction.md
+          - Basic: lang/js/basic-grammar.md
       - Markdown:
           - Grammar: lang/markdown/grammar.md
       - Git:
