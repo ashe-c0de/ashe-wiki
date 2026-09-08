@@ -95,3 +95,21 @@ ___
 一大段说明...
 -->
 ```
+
+## 12. Mermaid diagram
+
+```
+```mermaid
+graph TD
+this is mermaid graph content
+```
+
+```mermaid
+graph TD
+    JS[JavaScript]
+    JS --> Browser[Browser]
+    JS --> Node[Node.js]
+
+    Browser --> WebAPI[Web APIs]
+    Node --> NodeAPI[Node.js APIs]
+```
