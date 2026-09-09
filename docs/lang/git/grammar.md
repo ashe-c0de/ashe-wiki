@@ -7,16 +7,16 @@ git config --global user.name "Your Name"
 # 设置你的邮箱 (必须和 GitHub/Gitee 账号一致，否则没绿点)
 git config --global user.email "your.email@example.com"
 
-# 快捷键映射
+# 设置别名 (alias)
 git config --global alias.st status
-git config --global alias.co checkout
-git config --global alias.cm '!f() { git commit -m "$*"; }; f'
+git config --global alias.sw switch
+git config --global alias.cm 'commit -m'
 git config --global alias.br branch
-git config --global alias.ci commit
 git config --global alias.last "log -1 HEAD"
+git config --global alias.push-fwl 'push --force-with-lease'
 - git st 代替 git status
-- git co 代替 git checkout
-- git cm fix xxx 代替 git commit -m 'fix xxx'
+- git sw 代替 git switch
+- git cm "commit message" 代替 git commit -m "commit message"
 ```
 
 ## verify your config
@@ -97,16 +97,16 @@ git cherry-pick <commit-hash>
 
 ```bash
 # 1. 切换到个人分支
-git co dev-ashe
+git sw dev-ashe
 
 # 2. 开发、提交代码
 git add .
 git commit -m "feat: xxx"
 
 # 3. 同步主干最新代码（rebase 保持线性历史）
-git co dev
+git sw dev
 git pull origin dev
-git co dev-ashe
+git sw dev-ashe
 git rebase dev
 
 # 4. 如果有冲突，解决后继续（无代码冲突则跳过此步骤）
@@ -115,6 +115,8 @@ git rebase --continue
 
 # 5. 推送个人分支
 git push origin dev-ashe --force-with-lease
+或者你已设置git别名
+git push-fwl
 
 # 6. 创建 MR：dev-ashe → dev
 ```
