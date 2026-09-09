@@ -105,11 +105,11 @@ git sw dev-ashe
 
 # 2. 开发、提交代码
 git add .
-git commit -m "feat: xxx"
+git cm "feat: xxx"
 
 # 3. 同步主干最新代码（rebase 保持线性历史）
 git sw dev
-git pull origin dev
+git pull
 git sw dev-ashe
 git rebase dev
 
