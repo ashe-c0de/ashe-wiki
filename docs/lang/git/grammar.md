@@ -96,8 +96,11 @@ git cherry-pick <commit-hash>
 ### 日常开发流程
 
 ```bash
-git sw -c new-branch   # 创建并切换
-git br -d old-branch   # 删除分支
+# 创建并切换到新分支
+git sw -c new-branch
+
+# 删除本地分支
+git br -d old-branch
 
 
 # 1. 切换到个人分支
@@ -107,25 +110,29 @@ git sw dev-ashe
 git add .
 git cm "feat: xxx"
 
-# 3. 同步主干最新代码（rebase 保持线性历史）
+# 3. 同步主干最新代码
+#    使用 rebase 保持线性历史
 git sw dev
 git pull
 git sw dev-ashe
 git rebase dev
 
-# 4. 如果有冲突，解决后继续（无代码冲突则跳过此步骤）
+# 4. 如果有冲突，解决后继续
+#    无冲突则跳过
 git add .
 git rebase --continue
 
 # 5. 推送个人分支
 git push origin dev-ashe --force-with-lease
-或者你已设置git别名
+
+# 或者已设置 Git alias：
 git push-fwl
 
-# 6. 创建 MR：dev-ashe → dev
+# 6. 创建 MR
+#    dev-ashe → dev
 ```
 
-- 始终在 `dev-ashe` 上开发，不直接在 `dev` 上提交
+- 始终在 `dev-ashe` 上开发，不直接在 `dev` 上修改或提交
 - 用 `rebase` 而非 `merge` 同步主干，保持线性历史
 - 通过 MR 将 `dev-ashe` 合入 `dev`，提交历史干净无多余 merge commit
 
