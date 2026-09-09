@@ -96,6 +96,10 @@ git cherry-pick <commit-hash>
 ### 日常开发流程
 
 ```bash
+git sw -c new-branch   # 创建并切换
+git br -d old-branch   # 删除分支
+
+
 # 1. 切换到个人分支
 git sw dev-ashe
 
