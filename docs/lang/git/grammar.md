@@ -109,6 +109,9 @@ git sw dev-ashe
 # 2. 开发、提交代码
 git add .
 git cm "feat: xxx"
+git cm 'fix: xxx'
+# 第一次push的新分支
+git push -u origin HEAD
 
 # 3. 同步主干最新代码
 #    使用 rebase 保持线性历史
