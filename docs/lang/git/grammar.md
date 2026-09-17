@@ -126,8 +126,11 @@ git add .
 git rebase --continue
 
 # 5. 推送个人分支
-git push origin dev-ashe --force-with-lease
+# 无冲突
+git push
 
+# 有冲突
+git push origin dev-ashe --force-with-lease
 # 或者已设置 Git alias：
 git push-fwl
 
