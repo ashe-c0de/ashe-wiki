@@ -251,5 +251,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ashe-c0de
-    - icon: fontawesome/solid/square-rss
+    - icon: material/note-outline
       link: https://ashe-c0de.github.io
+    - icon: material/timer
+      link: https://ashe-wiki.github.io/25
