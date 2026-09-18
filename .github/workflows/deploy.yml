@@ -41,7 +41,7 @@ jobs:
 
       # 5. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
           external_repository: ashe-wiki/ashe-wiki.github.io
