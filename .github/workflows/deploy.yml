@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout the archive repo
+      # 1. Checkout the wiki repo
       - name: Checkout repo
         uses: actions/checkout@v4
 
@@ -30,7 +30,7 @@ jobs:
           pip install mkdocs mkdocs-material
           pip install mkdocs-glightbox
 
-      # 3.1 自动替换Copyright中的Present
+      # 3.1 Update Copyright Year
       - name: Update Copyright Year
         run: |
           sed -i "s/{{YEAR}}/$(date +%Y)/" mkdocs.yml
@@ -43,9 +43,10 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          personal_token: ${{ secrets.DEPLOY_TOKEN }}
-          external_repository: ashe-wiki/ashe-wiki.github.io
-          publish_branch: main
-          publish_dir: ./site
+          token: ${{ secrets.DEPLOY_TOKEN }}
+          repository-name: ashe-wiki/ashe-wiki.github.io
+          branch: main
+          folder: site
+          clean: true
           clean-exclude: |
             25/
