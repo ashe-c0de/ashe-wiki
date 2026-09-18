@@ -47,3 +47,5 @@ jobs:
           external_repository: ashe-wiki/ashe-wiki.github.io
           publish_branch: main
           publish_dir: ./site
+          clean-exclude: |
+            25/
