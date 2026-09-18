@@ -109,6 +109,9 @@ git sw dev-ashe
 # 2. 开发、提交代码
 git add .
 git cm "feat: xxx"
+git cm 'fix: xxx'
+# 第一次push的新分支
+git push -u origin HEAD
 
 # 3. 同步主干最新代码
 #    使用 rebase 保持线性历史
@@ -123,8 +126,11 @@ git add .
 git rebase --continue
 
 # 5. 推送个人分支
-git push origin dev-ashe --force-with-lease
+# 无冲突
+git push
 
+# 有冲突
+git push origin dev-ashe --force-with-lease
 # 或者已设置 Git alias：
 git push-fwl
 
