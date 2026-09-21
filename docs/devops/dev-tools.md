@@ -1,105 +1,107 @@
-# DevTools 调试
+# Getting Started with DevTools
 
-DevTools（开发者工具）是浏览器内置的一套调试工具。不用安装任何软件，几乎每个现代浏览器（Chrome、Edge、Firefox、Safari 等）都自带。
+DevTools (Developer Tools) is a set of debugging tools built into your browser. Nothing to install — every modern browser (Chrome, Edge, Firefox, Safari, etc.) ships with them.
 
-它能帮你回答三个最常见的开发问题：
+They help you answer three of the most common development questions:
 
-- 这个元素的样式为什么不对？
-- 这段 JavaScript 为什么报错了？
-- 这个接口请求为什么失败了？
+- Why does this element look wrong?
+- Why is this JavaScript throwing an error?
+- Why is this API request failing?
 
-## 1. 如何打开 DevTools
+This guide covers only the most commonly used panels. The goal is to help you know *where to look*, not to teach you everything.
 
-最常用的方式：
+## 1. How to Open DevTools
 
-- **macOS**：`Cmd + Option + I`
-- **Windows / Linux**：`F12`，或 `Ctrl + Shift + I`
-- **右键 → 检查（Inspect）**：在页面任意元素上右键，选择「检查」，会直接定位到该元素
-- **切换桌面端 / 移动端视图**：`Cmd + Shift + M`（macOS），或 `Ctrl + Shift + M`（Windows / Linux）
+The most common ways:
 
-打开后，界面通常分为左右或上下几个区域，下面介绍的几个面板都可以在顶部的标签页中找到。
+- **macOS**: `Cmd + Option + I`
+- **Windows / Linux**: `F12`, or `Ctrl + Shift + I`
+- **Right-click → Inspect**: Right-click any element on the page and choose "Inspect" — it jumps straight to that element
+- **Toggle device (mobile) view**: `Cmd + Shift + M` (macOS), or `Ctrl + Shift + M` (Windows / Linux)
+
+Once open, the interface is usually split into a few sections. All the panels below are available as tabs at the top.
 
 ## 2. Elements
 
-**位置**：DevTools 顶部的第一个标签页。
+**Where**: The first tab in DevTools.
 
-主要功能：
+What it does:
 
-- **查看 HTML / DOM**：页面实际渲染出来的结构，和源码不完全一样
-- **查看 CSS**：选中某个元素后，右侧会显示它应用的所有样式
-- **修改 CSS**：双击样式值可以直接修改，页面会实时更新，适合快速试错
-- **查看尺寸信息**：选中元素后，可视化展示它的 width / height / margin / padding
+- **View HTML / DOM**: The structure the page actually renders — not always identical to the source code
+- **View CSS**: Select an element to see all styles applied to it in the right-hand pane
+- **Edit CSS**: Double-click a style value to change it — the page updates live, great for quick experimentation
+- **Inspect dimensions**: Selecting an element shows its width / height / margin / padding visually
 
-**什么时候用它**：页面样式不对、元素布局不对（错位、间距异常、不居中）时查看。
+**When to use it**: When page styles look wrong or the layout is off (misaligned, odd spacing, not centered).
 
-注意：在 Elements 里改的内容刷新页面后会丢失，确认有效的改动要记回代码里。
+Note: changes you make in Elements disappear on refresh — once you find a fix, copy it back into your code.
 
 ## 3. Console
 
-**位置**：DevTools 顶部的「Console」标签页。
+**Where**: The "Console" tab in DevTools.
 
-主要功能：
+What it does:
 
-- **查看 JavaScript 错误**：红色的报错信息都会出现在这里，包括出错的文件和行号
-- **使用 `console.log()`**：在代码里打印变量，调试最常用的手段
-- **执行简单 JavaScript**：可以直接输入表达式并回车执行，例如 `document.title`
+- **View JavaScript errors**: Red error messages appear here, including the file and line number
+- **Use `console.log()`**: Print variables from your code — the most common debugging technique
+- **Run JavaScript directly**: Type an expression and press Enter, e.g. `document.title`
 
- **什么时候用它**：JavaScript 报错、代码行为异常时查看。
+**When to use it**: When JavaScript errors occur or the code behaves unexpectedly.
 
-养成习惯：**页面有问题，第一反应就是先看 Console**。很多「页面不工作」其实只是这里有一行红色报错。
+Build a habit: **whenever something is wrong with a page, check the Console first**. Many "the page doesn't work" moments turn out to be a single red error line here.
 
 ## 4. Network
 
-**位置**：DevTools 顶部的「Network」标签页。
+**Where**: The "Network" tab in DevTools.
 
-主要功能：查看浏览器发送的所有 HTTP 请求，每一条请求包含：
+What it does: shows every HTTP request the browser makes. Each request includes:
 
-- **URL**：请求发到了哪里
-- **Method**：请求方式（GET、POST 等）
-- **Status**：HTTP 状态码，请求是成功还是失败
-- **Request / Response**：请求带了什么参数，服务器返回了什么数据
+- **URL**: where the request was sent
+- **Method**: the request type (GET, POST, etc.)
+- **Status**: the HTTP status code — whether the request succeeded or failed
+- **Request / Response**: the parameters sent and the data returned by the server
 
-**什么时候用它**：API 请求失败、接口返回异常时查看。
+**When to use it**: When an API request fails or the response looks wrong.
 
-打开面板后刷新页面，就能看到所有请求。点击任意一条，可以查看它的详细信息。
+Open the panel and refresh the page to see all requests. Click any one of them for details.
 
-### 常见状态码
+### Common Status Codes
 
-| 状态码 | 含义 |
+| Status Code | Meaning |
 | --- | --- |
-| `200` | 成功 |
-| `400` | 请求参数有问题（Bad Request） |
-| `401` | 未登录或登录已过期（Unauthorized） |
-| `403` | 没有权限（Forbidden） |
-| `404` | 资源不存在（Not Found） |
-| `500` | 服务器内部错误（Internal Server Error） |
+| `200` | OK |
+| `400` | Bad Request — the request parameters are wrong |
+| `401` | Unauthorized — not logged in or session expired |
+| `403` | Forbidden — no permission |
+| `404` | Not Found — the resource doesn't exist |
+| `500` | Internal Server Error — something broke on the server |
 
-定位接口问题时，先看状态码，再看 Response 里的报错信息。
+When debugging an API issue, check the status code first, then look at the error message in the Response.
 
 ## 5. Sources
 
-**位置**：DevTools 顶部的「Sources」标签页。
+**Where**: The "Sources" tab in DevTools.
 
-主要功能：
+What it does:
 
-- **查看 JavaScript 源代码**：按文件浏览页面加载的所有脚本
-- **Breakpoint（断点）**：在代码某一行点击行号，代码执行到这里时会暂停
-- **单步执行**：暂停后逐行运行代码，配合 `console.log` 观察每一步的变量变化
+- **View JavaScript source code**: Browse every script the page loads, organized by file
+- **Breakpoint**: Click a line number to pause execution when the code reaches that line
+- **Step through code**: Once paused, run the code line by line, watching how variables change — often alongside `console.log`
 
-**什么时候用它**：JavaScript 逻辑有问题，需要一步一步查看代码执行过程时使用。
+**When to use it**: When the JavaScript logic is wrong and you need to trace through the execution step by step.
 
-断点调试比到处写 `console.log` 更适合排查「逻辑为什么这么走」的问题，但入门阶段先会用 `console.log` 就够了。
+Breakpoints are better than scattering `console.log` everywhere for figuring out *why the code took a certain path* — but at the beginner stage, `console.log` alone is enough.
 
-## 6. 一个最简单的调试思路
+## 6. A Simple Debugging Workflow
 
-遇到页面问题，不要慌，按这个顺序来：
+When something goes wrong on a page, don't panic — follow this order:
 
 ```text
-页面有问题
+Something is wrong with the page
     ↓
-先看 Console
+Check the Console first
     ↓
-样式问题 → Elements
-接口问题 → Network
-代码逻辑问题 → Sources
+Style issue        → Elements
+API/request issue  → Network
+Logic issue        → Sources
 ```
