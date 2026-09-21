@@ -229,6 +229,7 @@ nav:
 
   - DevOps:
       - Longstreet: devops/index.md
+      - DevTools: devops/dev-tools.md
       - Transactional-mq: devops/transactional-mq.md
       - Cache: devops/cache.md
       - Mq-loss: devops/mq-loss.md
