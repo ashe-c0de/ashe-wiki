@@ -245,6 +245,7 @@ nav:
       - Tools:
           - WezTerm + Neovim: other/tools/nvim.md
           - Scoop: other/tools/scoop.md
+          - Npm: other/tools/npm.md
           - ssh gui: other/tools/ssh-gui.md
           - Visual Studio Code: other/tools/vscode.md
 
